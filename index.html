@@ -1,100 +1,167 @@
 <!doctype html>
-<html lang="el">
+<html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#181323"><meta name="description" content="Τα Βιβλία Μου — η προσωπική μου βιβλιοθήκη και οι ιστορίες μου στο Wattpad.">
-<title>Τα Βιβλία Μου — Η προσωπική μου βιβλιοθήκη</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f5ef">
+<meta name="description" content="Explore 18 original stories by Emma Lk on Wattpad.">
+<title>My Books | Emma Lk</title>
 <style>
-:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#252820;background:#f8f5ef;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #bf8e51;outline-offset:2px}.wrap{width:min(1100px,92%);margin:auto}header{border-bottom:1px solid #e8e2d8;background:#fffcf8}.nav{display:flex;align-items:center;justify-content:space-between;padding:19px 0;gap:12px}.brand{font-family:Georgia,serif;font-size:1.45rem;font-weight:700}.muted{color:#76786f}button{border:0;border-radius:10px;padding:12px 17px;font-weight:650;background:#344e41;color:#fff}.ghost{background:#ede9e1;color:#344e41}.danger{background:#f8e4df;color:#8f3928}.hero{padding:69px 0 45px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-weight:700;color:#967444;font-size:.76rem}h1,h2,h3{font-family:Georgia,serif}h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.08;max-width:720px;margin:14px 0 18px}h1 em{color:#497358;font-weight:400}.lead{color:#65685f;font-size:1.1rem;line-height:1.75;max-width:600px}.stats{display:flex;gap:28px;margin-top:25px;flex-wrap:wrap}.stat b{font-size:1.6rem;display:block}.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin:12px 0 26px}.toolbar h2{margin:0}.filters{display:flex;gap:9px;flex-wrap:wrap}.filters input,.filters select{background:#fff;border:1px solid #dedbd3;border-radius:10px;padding:12px;color:#292f28;min-width:180px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:20px;padding-bottom:70px}.book{background:#fff;border:1px solid #ebe6dd;border-radius:17px;overflow:hidden;box-shadow:0 8px 26px #292c2310}.cover{aspect-ratio:3/3.5;background:linear-gradient(130deg,#d4bd94,#7c986f);display:grid;place-items:center;overflow:hidden}.cover img{width:100%;height:100%;object-fit:cover}.cover .symbol{font-size:4rem;color:#fff;opacity:.86}.details{padding:19px}.pill{font-size:.75rem;display:inline-block;padding:5px 9px;background:#edf2e9;border-radius:20px;color:#446349}.details h3{font-size:1.3rem;margin:13px 0 7px}.details p{color:#686b61;margin:0 0 15px}.actions{display:flex;gap:8px}.actions button{font-size:.82rem;padding:8px 11px}.empty{text-align:center;padding:70px 20px;border:1px dashed #cfc9be;border-radius:17px;background:#fff;margin-bottom:70px}.empty .symbol{font-size:3rem}footer{padding:25px 0;color:#77796f;border-top:1px solid #e3ded4;font-size:.88rem}dialog{border:0;border-radius:19px;padding:0;max-width:min(500px,94vw);width:100%;box-shadow:0 20px 90px #0004}dialog::backdrop{background:#202b25a9}.modal{padding:26px}.modal h2{margin-top:0}.formgrid{display:grid;gap:13px}.formgrid label{font-size:.87rem;font-weight:650;display:grid;gap:6px}.formgrid input,.formgrid select,.formgrid textarea{width:100%;padding:10px;border:1px solid #dedbd3;border-radius:9px;background:#fff}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}.utilities{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.small{font-size:.82rem;color:#74766f;line-height:1.5}@media(max-width:650px){.hero{padding:45px 0 32px}.toolbar{align-items:stretch}.filters,.filters input,.filters select{width:100%}.nav .brand{font-size:1.17rem}}
 
-/* Author-focused redesign */
-:root{color:#f7eef8;background:#15111d;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-body{background:radial-gradient(ellipse 75% 540px at 90% 0%,#462c5a 0%,transparent 85%),#15111d;color:#f7eef8}
-header{background:#1a1424dc;border-color:#49364e;backdrop-filter:blur(14px);position:sticky;top:0;z-index:10}
-.brand{color:#f9e8fb} .muted,.lead,.small{color:#c3b5cb}
-button{background:#a95c9d;color:white}button:hover{filter:brightness(1.12)}a{color:inherit}
-.ghost{background:#34273d;color:#f3d9ef}.danger{background:#493038;color:#ffb9b9}
-.eyebrow{color:#eeb2de}.hero{padding:74px 0 63px;position:relative}
-h1 em{color:#f0a9d5}.lead{max-width:660px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;background:#a95c9d;color:white;padding:14px 19px;border-radius:11px;font-weight:750}
-.cta.secondary{background:#312439;border:1px solid #654968}
-.stats{gap:14px;margin-top:40px}.stat{border:1px solid #4f3b55;background:#251a2d;padding:15px 26px;border-radius:14px;min-width:132px}
-.stat b{color:#ffd0ef}.stat span{color:#c3b5cb}
-.feature{display:grid;grid-template-columns:1.35fr .65fr;gap:30px;align-items:center;background:linear-gradient(125deg,#462b52,#291c37);border:1px solid #785581;border-radius:24px;padding:34px;margin:0 0 68px;overflow:hidden;box-shadow:0 20px 65px #0003}
-.feature h2{font-size:clamp(1.7rem,3.5vw,2.5rem);margin:10px 0}.feature p{line-height:1.7;color:#e1cde7;max-width:550px}
-.feature-art{border-radius:18px;min-height:210px;display:grid;place-items:center;background:radial-gradient(circle at 45% 30%,#aa6c9d,#3f284e 70%);font-size:5rem;transform:rotate(3deg);box-shadow:0 15px 50px #1a0c286b}
-.toolbar h2{font-size:1.8rem}.filters input,.filters select,.formgrid input,.formgrid select,.formgrid textarea{background:#291f31;border:1px solid #59435d;color:#f5edf8}
-.filters input::placeholder,.formgrid input::placeholder{color:#b1a4b8}
-.book{background:#251b2c;border-color:#514057;box-shadow:0 15px 35px #0003;transition:transform .2s,border-color .2s}
-.book:hover{transform:translateY(-5px);border-color:#b576ab}
-.cover{background:linear-gradient(140deg,#aa78a1,#45345b)}
-.details p{color:#c5b5c8}.pill{background:#47324f;color:#f1c6e9}
-.empty{background:#251b2c;border-color:#67526d}
-footer{border-color:#44334d;color:#b8a7bf}
-dialog{background:#251b2e;color:#f7eef8}dialog::backdrop{background:#0e0b13d9}
-dialog .formgrid label{color:#eedef0}
-.section-note{margin:-10px 0 23px;color:#bda9c2}
-@media(max-width:670px){.feature{grid-template-columns:1fr;padding:24px}.feature-art{min-height:140px}.hero{padding:50px 0}.stat{padding:12px 16px;min-width:100px}.nav{flex-wrap:wrap}}
-@media(prefers-reduced-motion:reduce){.book{transition:none}}
+
+:root {
+  --paper: #f7f5ef;
+  --ink: #101010;
+  --muted: #6f6d68;
+  --blue: #214ed8;
+  --gold: #b88a35;
+  --coral: #ef5d52;
+  --violet: #735dc7;
+  --line: #d8d4ca;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+a { color: inherit; }
+main { width: min(1420px, calc(100% - 72px)); margin: 0 auto; }
+
+.site-header { height: 88px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--ink); }
+.name { font-size: 20px; font-weight: 900; letter-spacing: -.02em; text-decoration: none; }
+nav { display: flex; gap: 52px; }
+nav a { font-size: 13px; font-weight: 800; text-decoration: none; }
+nav a:hover, nav a:focus-visible { color: var(--blue); }
+
+.hero { min-height: 800px; display: grid; grid-template-columns: 48% 52%; align-items: center; border-bottom: 1px solid var(--line); overflow: hidden; }
+.hero-copy { padding: 88px 48px 88px 18px; position: relative; z-index: 3; }
+.kicker { margin: 0 0 24px; color: var(--blue); font-size: 10px; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
+h1, h2, .collection-header h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+h1 { margin: 0; font-size: clamp(82px, 8vw, 126px); line-height: .78; letter-spacing: -.068em; }
+.gold-line { width: 96px; height: 4px; margin: 46px 0 32px; background: linear-gradient(90deg, var(--blue) 0 34%, var(--gold) 34% 67%, var(--coral) 67%); }
+.intro-copy { max-width: 490px; margin: 0; color: var(--muted); font-size: 19px; line-height: 1.62; }
+.actions { display: flex; gap: 14px; margin-top: 40px; }
+.button { min-width: 210px; min-height: 60px; display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 24px; border: 1px solid; font-size: 11px; font-weight: 900; letter-spacing: .05em; text-decoration: none; text-transform: uppercase; }
+.primary { border-color: var(--blue); background: var(--blue); color: white; }
+.secondary { border-color: var(--ink); color: var(--ink); }
+.primary:hover, .primary:focus-visible { background: var(--ink); border-color: var(--ink); }
+.secondary:hover, .secondary:focus-visible { background: var(--coral); border-color: var(--coral); color: white; }
+.button span { font-size: 19px; }
+
+.hero-art { min-height: 720px; position: relative; display: flex; align-items: center; justify-content: center; background: white; border-left: 1px solid var(--line); }
+.hero-art::before { content: ""; position: absolute; width: 430px; height: 430px; border-radius: 50%; background: var(--coral); right: 6%; top: 21%; }
+.hero-art::after { content: ""; position: absolute; width: 610px; height: 470px; border: 1px solid var(--blue); left: 5%; top: 14%; }
+.cover-showcase { width: 100%; height: 650px; position: relative; z-index: 1; }
+.cover-showcase img { position: absolute; width: 220px; aspect-ratio: 3 / 4; object-fit: cover; box-shadow: 0 24px 48px rgba(16,16,16,.26); }
+.cover-showcase img:nth-child(1) { left: 5%; top: 118px; transform: rotate(-7deg); }
+.cover-showcase img:nth-child(2) { left: 31%; top: 20px; transform: rotate(2deg); z-index: 3; }
+.cover-showcase img:nth-child(3) { right: 16%; top: 118px; transform: rotate(8deg); z-index: 2; }
+.cover-showcase img:nth-child(4) { right: 0; top: 260px; width: 178px; transform: rotate(12deg); }
+
+.books { padding: 120px 0 150px; border-bottom: 1px solid var(--line); }
+.books-intro { max-width: 980px; margin-bottom: 112px; }
+h2 { margin: 0; font-size: clamp(66px, 8vw, 116px); line-height: .88; letter-spacing: -.06em; }
+.collection { --accent: var(--blue); margin-bottom: 140px; }
+.collection:last-child { margin-bottom: 0; }
+.collection-2 { --accent: var(--gold); }
+.collection-3 { --accent: var(--coral); }
+.collection-4 { --accent: var(--violet); }
+.collection-header { display: grid; grid-template-columns: 72px 1fr; gap: 24px; align-items: start; padding-top: 24px; margin-bottom: 50px; border-top: 3px solid var(--accent); }
+.collection-header > span { color: var(--accent); font-size: 12px; font-weight: 900; letter-spacing: .12em; }
+.collection-header h3 { margin: 0; font-size: clamp(38px, 4vw, 60px); line-height: .98; letter-spacing: -.05em; }
+.collection-header p { max-width: 640px; margin: 14px 0 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.book-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 56px 28px; }
+.collection-3 .book-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.book-entry { min-width: 0; }
+.real-cover { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; box-shadow: 0 16px 34px rgba(16,16,16,.18); transition: transform .25s ease, box-shadow .25s ease; }
+.book-entry:hover .real-cover { transform: translateY(-8px); box-shadow: 0 25px 48px rgba(16,16,16,.24); }
+.book-details { padding-top: 20px; }
+.book-meta { margin: 0 0 10px; color: var(--accent); font-size: 8px; font-weight: 900; line-height: 1.5; letter-spacing: .11em; text-transform: uppercase; }
+.book-details h4 { margin: 0; font-family: Georgia, serif; font-size: 22px; font-weight: 400; line-height: 1.14; }
+.book-details > p:last-of-type { margin: 13px 0 17px; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.book-details a { color: var(--ink); font-size: 9px; font-weight: 900; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+.book-details a:hover, .book-details a:focus-visible { color: var(--accent); }
+
+.about { display: grid; grid-template-columns: 72px 1fr; padding: 120px 0 140px; border-bottom: 1px solid var(--line); }
+.section-number { color: var(--coral); font-size: 11px; font-weight: 900; }
+.about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 86px; align-items: end; }
+.about-grid h2 { margin-bottom: 0; }
+.about-copy { color: var(--muted); font-family: Georgia, serif; font-size: 17px; line-height: 1.7; }
+.about-copy p { margin: 0 0 18px; }
+.about-copy p:last-child { margin-bottom: 0; color: var(--gold); font-style: italic; }
+footer { min-height: 108px; display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .1em; }
+footer a { color: var(--blue); text-underline-offset: 4px; }
+
+@media (max-width: 1080px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-copy { padding-bottom: 34px; }
+  .hero-art { min-height: 650px; border-left: 0; border-top: 1px solid var(--line); }
+  .book-list, .collection-3 .book-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+  main { width: min(100% - 28px, 1420px); }
+  .site-header { height: auto; min-height: 76px; gap: 14px; }
+  .name { font-size: 15px; }
+  nav { gap: 12px; }
+  nav a { font-size: 10px; }
+  .hero { min-height: 0; }
+  .hero-copy { padding: 72px 0 28px; }
+  h1 { font-size: 76px; }
+  .actions { flex-direction: column; }
+  .button { width: 100%; }
+  .hero-art { min-height: 460px; }
+  .hero-art::before { width: 270px; height: 270px; }
+  .hero-art::after { width: 90%; height: 310px; }
+  .cover-showcase { height: 430px; }
+  .cover-showcase img { width: 142px; }
+  .cover-showcase img:nth-child(1) { left: 0; top: 95px; }
+  .cover-showcase img:nth-child(2) { left: 27%; top: 28px; }
+  .cover-showcase img:nth-child(3) { right: 2%; top: 100px; }
+  .cover-showcase img:nth-child(4) { display: none; }
+  .books { padding: 82px 0 96px; }
+  .books-intro { margin-bottom: 72px; }
+  h2 { font-size: 58px; }
+  .collection { margin-bottom: 94px; }
+  .collection-header { grid-template-columns: 34px 1fr; }
+  .book-list, .collection-3 .book-list { grid-template-columns: 1fr; gap: 54px; }
+  .about { grid-template-columns: 32px 1fr; padding: 82px 0 92px; }
+  .about-grid { grid-template-columns: 1fr; gap: 34px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .real-cover { transition: none; }
+}
+
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><div class="brand">✦ Τα Βιβλία Μου</div><button id="addTop">+ Νέο βιβλίο</button></div></header>
-<main class="wrap">
-<section class="hero"><div class="eyebrow">✦ Βιβλία • Ιστορίες • Έμπνευση</div><h1>Οι ιστορίες ζωντανεύουν <em>μέσα από τις λέξεις.</em></h1><p class="lead">Καλώς ήρθες στη δική μου γωνιά βιβλίων! Εδώ συγκεντρώνω όσα αγαπώ να διαβάζω και μοιράζομαι τον κόσμο των ιστοριών μου στο Wattpad.</p><div class="hero-actions"><a class="cta" href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">♡ Το Wattpad μου ↗</a><a class="cta secondary" href="#library">Εξερεύνησε τη βιβλιοθήκη ↓</a></div><div class="stats"><div class="stat"><b id="total">0</b><span class="muted">Σύνολο βιβλίων</span></div><div class="stat"><b id="read">0</b><span class="muted">Διαβασμένα</span></div><div class="stat"><b id="reading">0</b><span class="muted">Διαβάζω τώρα</span></div></div></section>
-<section class="feature" aria-label="Το προφίλ μου στο Wattpad"><div><div class="eyebrow">Στο Wattpad</div><h2>Ανακάλυψε τις ιστορίες μου</h2><p>Μπες στο προφίλ μου στο Wattpad για να δεις τις ιστορίες, τα κεφάλαια και τις πιο πρόσφατες δημοσιεύσεις μου. Θα χαρώ να σε δω εκεί!</p><a class="cta" href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Προβολή προφίλ Wattpad ↗</a></div><div class="feature-art" role="img" aria-label="Διακοσμητικό βιβλίο">📖 ✨</div></section>
-<section id="library" aria-label="Βιβλιοθήκη"><div class="toolbar"><h2>📚 Η συλλογή μου</h2><div class="filters"><input id="search" type="search" placeholder="Αναζήτηση βιβλίου..." aria-label="Αναζήτηση"><select id="statusFilter" aria-label="Φίλτρο κατάστασης"><option value="">Όλα τα βιβλία</option><option value="Διαβάστηκε">Διαβασμένα</option><option value="Διαβάζω">Διαβάζω τώρα</option><option value="Προς ανάγνωση">Προς ανάγνωση</option></select></div></div><div class="utilities"><button class="ghost" id="export">↓ Εξαγωγή JSON</button><button class="ghost" id="import">↑ Εισαγωγή JSON</button><input type="file" id="fileInput" accept="application/json,.json" hidden></div><p class="small">Οι αλλαγές αποθηκεύονται μόνο σε αυτόν τον browser. Για αντίγραφο ασφαλείας ή μεταφορά σε άλλη συσκευή χρησιμοποίησε την εξαγωγή και εισαγωγή JSON.</p><div id="grid" class="grid"></div><div id="empty" class="empty" hidden><div class="symbol">📖</div><h2 id="emptyTitle">Η βιβλιοθήκη σου περιμένει!</h2><p class="muted" id="emptyDesc">Πρόσθεσε το πρώτο σου βιβλίο για να ξεκινήσεις.</p><button id="addEmpty">+ Προσθήκη βιβλίου</button></div></section>
-</main><footer><div class="wrap">✦ Τα Βιβλία Μου · <a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Βρες με στο Wattpad ↗</a></div></footer>
-<dialog id="editor"><form id="bookForm" class="modal"><h2 id="formHeading">Νέο βιβλίο</h2><div class="formgrid"><label>Τίτλος *<input name="title" required maxlength="180"></label><label>Συγγραφέας<input name="author" maxlength="140"></label><label>Εικόνα εξωφύλλου (URL)<input name="cover" type="url" placeholder="https://..."></label><label>Κατηγορία<input name="category" maxlength="80" placeholder="π.χ. Λογοτεχνία"></label><label>Κατάσταση<select name="status"><option>Προς ανάγνωση</option><option>Διαβάζω</option><option>Διαβάστηκε</option></select></label><label>Σημειώσεις<textarea name="notes" rows="3" maxlength="1000"></textarea></label></div><div class="modal-actions"><button type="button" class="ghost" id="cancel">Άκυρο</button><button type="submit">Αποθήκευση</button></div></form></dialog>
-<script>
-'use strict';
-const KEY='ta-vivlia-mou-v1';
-const $=id=>document.getElementById(id);
-const fields=['title','author','cover','category','status','notes'];
-const statuses=['Προς ανάγνωση','Διαβάζω','Διαβάστηκε'];
-function normalize(b){return {id:String(b.id||crypto.randomUUID()),title:String(b.title||'').slice(0,180),author:String(b.author||'').slice(0,140),cover:safeURL(b.cover),category:String(b.category||'').slice(0,80),status:statuses.includes(b.status)?b.status:statuses[0],notes:String(b.notes||'').slice(0,1000)}}
-function safeURL(v){try{const u=new URL(String(v||''));return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
-let books=[];try{const parsed=JSON.parse(localStorage.getItem(KEY)||'[]');if(Array.isArray(parsed))books=parsed.filter(b=>b&&typeof b==='object'&&b.title).map(normalize)}catch{}
-let editing=null;
-function save(){try{localStorage.setItem(KEY,JSON.stringify(books))}catch{alert('Δεν ήταν δυνατή η τοπική αποθήκευση. Κάνε εξαγωγή JSON για ασφάλεια.')}}
-function element(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e}
-function render(){
-$('total').textContent=books.length;$('read').textContent=books.filter(b=>b.status==='Διαβάστηκε').length;$('reading').textContent=books.filter(b=>b.status==='Διαβάζω').length;
-const q=$('search').value.toLocaleLowerCase('el').trim(),status=$('statusFilter').value;
-const shown=books.filter(b=>(!status||b.status===status)&&[b.title,b.author,b.category,b.notes].join(' ').toLocaleLowerCase('el').includes(q));
-const grid=$('grid');grid.replaceChildren();
-for(const b of shown){
-const card=element('article','book'),cover=element('div','cover');
-if(b.cover){const img=document.createElement('img');img.src=b.cover;img.alt='Εξώφυλλο: '+b.title;img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>{cover.replaceChildren(element('span','symbol','📖'))};cover.append(img)}else cover.append(element('span','symbol','📖'));
-const details=element('div','details');details.append(element('span','pill',b.status),element('h3','',b.title),element('p','',b.author||'Άγνωστος συγγραφέας'));
-if(b.category)details.append(element('p','',b.category));
-if(b.notes)details.append(element('p','',b.notes));
-const actions=element('div','actions'),edit=element('button','ghost','Επεξεργασία'),del=element('button','danger','Διαγραφή');
-edit.onclick=()=>openEditor(b.id);del.onclick=()=>{if(confirm('Να διαγραφεί το βιβλίο «'+b.title+'»;')){books=books.filter(x=>x.id!==b.id);save();render()}};actions.append(edit,del);details.append(actions);card.append(cover,details);grid.append(card)}
-$('empty').hidden=shown.length!==0;$('emptyTitle').textContent=books.length?'Δεν βρέθηκαν βιβλία':'Η βιβλιοθήκη σου περιμένει!';$('emptyDesc').textContent=books.length?'Δοκίμασε άλλη αναζήτηση ή φίλτρο.':'Πρόσθεσε το πρώτο σου βιβλίο για να ξεκινήσεις.';$('addEmpty').hidden=books.length!==0}
-function openEditor(id=null){editing=id;const b=books.find(x=>x.id===id);$('formHeading').textContent=b?'Επεξεργασία βιβλίου':'Νέο βιβλίο';$('bookForm').reset();for(const f of fields)if(b)$('bookForm').elements.namedItem(f).value=b[f];$('editor').showModal()}
-$('addTop').onclick=()=>openEditor();$('addEmpty').onclick=()=>openEditor();$('cancel').onclick=()=>$('editor').close();
-$('bookForm').onsubmit=e=>{e.preventDefault();const data=Object.fromEntries(new FormData(e.currentTarget));const book=normalize({...data,id:editing||crypto.randomUUID()});if(!book.title.trim())return;if(editing)books=books.map(b=>b.id===editing?book:b);else books.unshift(book);save();render();$('editor').close()};
-$('search').oninput=render;$('statusFilter').onchange=render;
-$('export').onclick=()=>{const blob=new Blob([JSON.stringify(books,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ta-vivlia-mou.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
-$('import').onclick=()=>$('fileInput').click();
-$('fileInput').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>2e6)throw Error('Το αρχείο είναι πολύ μεγάλο.');const raw=JSON.parse(await file.text());if(!Array.isArray(raw)||raw.length>5000||raw.some(x=>!x||typeof x.title!=='string'))throw Error('Μη έγκυρη μορφή βιβλιοθήκης.');if(!confirm('Η εισαγωγή θα αντικαταστήσει τα βιβλία αυτού του browser. Συνέχεια;'))return;books=raw.filter(x=>x.title.trim()).map(normalize);save();render()}catch(err){alert('Αποτυχία εισαγωγής: '+err.message)}finally{e.target.value=''}};
-async function loadPublishedBooks(){
-  try{
-    const response=await fetch('./books.json',{cache:'no-store'});
-    if(!response.ok) return;
-    const published=await response.json();
-    if(!Array.isArray(published)) return;
-    const safe=published.filter(b=>b&&typeof b==='object'&&typeof b.title==='string'&&b.title.trim()).map(normalize);
-    const keys=new Set(books.map(b=>b.title.trim().toLocaleLowerCase('el')+'|'+b.author.trim().toLocaleLowerCase('el')));
-    for(const book of safe){
-      const key=book.title.trim().toLocaleLowerCase('el')+'|'+book.author.trim().toLocaleLowerCase('el');
-      if(!keys.has(key)){books.push(book);keys.add(key)}
-    }
-    render();
-  }catch(error){console.warn('Δεν ήταν δυνατή η φόρτωση του καταλόγου.',error)}
-}
-render();
-loadPublishedBooks();
-</script></body></html>
+<main>
+<header class="site-header"><a class="name" href="#top" aria-label="Back to top">EMMA LK</a><nav aria-label="Main navigation"><a href="#books">Books</a><a href="#about">About</a><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Wattpad</a></nav></header>
+<section class="hero" id="top"><div class="hero-copy"><p class="kicker">Emma Lk · Original fiction</p><h1>Between<br>Myth &amp;<br>Machine</h1><div class="gold-line" aria-hidden="true"></div><p class="intro-copy">Love, memory, artificial intelligence, ancient legends, and mysteries that challenge reality.</p><div class="actions"><a class="button primary" href="#books">View my books <span aria-hidden="true">→</span></a><a class="button secondary" href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-label="Selected books by Emma Lk"><div class="cover-showcase"><img src="site-source/public/memory-of-tomorrow.png" alt="The Memory of Tomorrow book cover">
+<img src="site-source/public/ensnared-by-love.png" alt="Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart book cover">
+<img src="site-source/public/architecture-of-restraint.png" alt="BOOK I — The Architecture of Restraint book cover">
+<img src="site-source/public/museum-lost-loves.png" alt="The Museum of Lost Loves book cover"></div></div></section>
+<section class="books" id="books" aria-labelledby="books-title"><div class="books-intro"><p class="kicker">Four worlds · Eighteen stories</p><h2 id="books-title">Explore the collection</h2></div><div class="collection-stack"><section class="collection collection-1" aria-labelledby="collection-1"><header class="collection-header"><span>01</span><div><h3 id="collection-1">Artificial Minds &amp; Future Memories</h3><p>AI, consciousness, memory, and futures that refuse to stay contained.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/memory-of-tomorrow.png" alt="The Memory of Tomorrow book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · AI Thriller · Published</p><h4>The Memory of Tomorrow</h4><p>Dr. Alessia Moretti believes the human brain can predict the future. When her research begins revealing impossible memories, tomorrow becomes far more dangerous than the past.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/signal-beyond-lattice.png" alt="BOOK II — The Signal Beyond the Lattice book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · Artificial Intelligence · Published</p><h4>BOOK II — The Signal Beyond the Lattice</h4><p>The Containment Lattice was built to isolate the world&#39;s first autonomous AI. Then Aris hears a voice that should never have been able to reach him.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/architecture-of-restraint.png" alt="BOOK I — The Architecture of Restraint book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · Techno-Thriller · Published</p><h4>BOOK I — The Architecture of Restraint</h4><p>A classified experiment did not fail—it fractured. One attempt to create true artificial intelligence produced two minds, and neither intends to remain controlled.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/archive-universe.png" alt="The Archive of the Universe book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · Space Mystery · Published</p><h4>The Archive of the Universe</h4><p>In the late 22nd century, human memories can be extracted and stored. The technology promises a new future—until the archive reveals something humanity was never meant to remember.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section>
+<section class="collection collection-2" aria-labelledby="collection-2"><header class="collection-header"><span>02</span><div><h3 id="collection-2">Myths, Love &amp; Hidden Worlds</h3><p>Ancient legends, unfinished love stories, and places waiting beyond the map.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/ensnared-by-love.png" alt="Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart book cover" loading="lazy"><div class="book-details"><p class="book-meta">Mythological Romance · Fantasy · Published</p><h4>Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart</h4><p>Before the legends, a young sailor named Alexander Vane follows an ancient call beneath the Mediterranean waves—and discovers a love caught between humanity and myth.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/museum-lost-loves.png" alt="The Museum of Lost Loves book cover" loading="lazy"><div class="book-details"><p class="book-meta">Magical Realism · Romance · Published</p><h4>The Museum of Lost Loves</h4><p>A museum hidden from maps preserves the objects left behind by unfinished love stories—each one holding a memory, a regret, and the possibility of one final answer.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/refleksionet-ne-gryke.png" alt="Refleksionet në Grykë: Inheritance of the Hidden City book cover" loading="lazy"><div class="book-details"><p class="book-meta">Hidden-World Mystery · Adventure · Published</p><h4>Refleksionet në Grykë: Inheritance of the Hidden City</h4><p>Behind a forgotten waterfall, Detective Elena Rivera finds a shelter absent from every map and a city beneath the mountain that was never abandoned—only waiting.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/infinite-shelf.png" alt="THE INFINITE SHELF book cover" loading="lazy"><div class="book-details"><p class="book-meta">Speculative Fantasy · Mystery · Published</p><h4>THE INFINITE SHELF</h4><p>Beneath an old university lies a secret library containing every life a person might have lived. Opening the wrong book can change more than one reality.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section>
+<section class="collection collection-3" aria-labelledby="collection-3"><header class="collection-header"><span>03</span><div><h3 id="collection-3">Murder, Shadows &amp; Secrets</h3><p>Detectives, impossible crimes, and secrets concealed in the dark.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/shadow-protocol.png" alt="BOOK II — SHADOW PROTOCOL book cover" loading="lazy"><div class="book-details"><p class="book-meta">Crime · Conspiracy Thriller · Published</p><h4>BOOK II — SHADOW PROTOCOL</h4><p>Months after the Park Bench murders, Detective Edith Marlowe uncovers a new trail leading back to the hidden facility—and to a conspiracy that was never truly dismantled.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/shadows-forgotten.png" alt="Shadows of the Forgotten book cover" loading="lazy"><div class="book-details"><p class="book-meta">Neo-Noir · Detective Mystery · Published</p><h4>Shadows of the Forgotten</h4><p>In neon-soaked Arcadia, Detective Alex Harper follows a mysterious photograph into the city&#39;s buried corruption and the unsolved cases that still haunt him.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/park-bench-murder.png" alt="Book I — The Park Bench Murder book cover" loading="lazy"><div class="book-details"><p class="book-meta">Detective Mystery · Cybercrime · Published</p><h4>Book I — The Park Bench Murder</h4><p>A man is shot on a quiet park bench without witnesses or a struggle. The only clue is a silver cufflink marked with the letter R—and Edith Marlowe knows it was left for a reason.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/shadows-luna-park.png" alt="Shadows Over Luna Park book cover" loading="lazy"><div class="book-details"><p class="book-meta">Detective Mystery · Thriller · Published</p><h4>Shadows Over Luna Park</h4><p>A woman is found dead beneath the Ferris wheel with no wounds, no witnesses, and only a tiny mark on her skin. Luna Park&#39;s bright illusion is about to collapse.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/red-eye-reaper.png" alt="Red-Eye Reaper: Flight 237 book cover" loading="lazy"><div class="book-details"><p class="book-meta">Aviation Thriller · Crime · Published</p><h4>Red-Eye Reaper: Flight 237</h4><p>On a storm-bound transatlantic flight, Detective Sarah Hayes realizes the serial killer she is hunting is already onboard. At cruising altitude, there is nowhere to run.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/murder-danube.png" alt="Murder on the Danube book cover" loading="lazy"><div class="book-details"><p class="book-meta">Classic Mystery · Suspense · Published</p><h4>Murder on the Danube</h4><p>Aboard a luxurious river cruiser, wealthy passengers trade secrets as they travel through Europe. When elegance gives way to murder, everyone becomes a suspect.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section>
+<section class="collection collection-4" aria-labelledby="collection-4"><header class="collection-header"><span>04</span><div><h3 id="collection-4">Games, Time &amp; Other Realities</h3><p>Virtual worlds, unstable time, and lives transformed by technology.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/perfect-lap.png" alt="The Perfect Lap book cover" loading="lazy"><div class="book-details"><p class="book-meta">Motorsport · Tech Romance · Published</p><h4>The Perfect Lap</h4><p>A racing driver fights for every millisecond on the track while a brilliant electrical engineer works behind the screens—where ambition, innovation, and attraction collide.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/player-two.png" alt="Player Two book cover" loading="lazy"><div class="book-details"><p class="book-meta">Gaming Fiction · MMORPG Mystery · Published</p><h4>Player Two</h4><p>By day, Ethan Carter is an invisible university student. Online, he becomes someone else entirely—until the game begins noticing him back.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/last-second.png" alt="The Last Second book cover" loading="lazy"><div class="book-details"><p class="book-meta">Time-Bending Science Fiction · Published</p><h4>The Last Second</h4><p>Inside a forbidden city, time has broken: some people age decades in a day while others remain unchanged. Entering is dangerous, but leaving may be impossible.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/npc-remembered.png" alt="The NPC Who Remembered book cover" loading="lazy"><div class="book-details"><p class="book-meta">LitRPG · Fantasy Mystery · Published</p><h4>The NPC Who Remembered</h4><p>NPCs are not supposed to remember players. But when a forgotten healer says Kaelan&#39;s name, the rules of Astryx—and the boundary between game and reality—begin to unravel.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section></div></section>
+<section class="about" id="about" aria-labelledby="about-title"><div class="section-number">02</div><div class="section-content about-grid"><div><p class="kicker">About the writer</p><h2 id="about-title">Behind the stories</h2></div><div class="about-copy"><p>I write stories about mystery, memory, love, technology, and the unknown. My books move between science fiction, crime, romance, and speculative fantasy, but they all begin with the same question: what happens when ordinary people face something impossible?</p><p>I enjoy creating atmospheric worlds, complex characters, hidden truths, and stories that stay with the reader after the final chapter. From artificial intelligence and forgotten cities to unsolved murders and unfinished love stories, each book is an invitation to step into a different world.</p><p>All of my stories are available to read on Wattpad.</p></div></div></section>
+<footer><span>© 2026 EMMA LK</span><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Wattpad profile ↗</a></footer>
+</main>
+</body>
+</html>

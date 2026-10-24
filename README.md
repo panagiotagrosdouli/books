@@ -1,22 +1,13 @@
-# 📚 Τα Βιβλία Μου
+# My Books
 
-Μια προσωπική βιβλιοθήκη στα ελληνικά, φτιαγμένη ως στατική ιστοσελίδα για το GitHub Pages.
+An English author portfolio featuring original stories by Emma Lk.
 
-## Λειτουργίες
-- Προσθήκη, επεξεργασία και διαγραφή βιβλίων
-- Αναζήτηση με τίτλο, συγγραφέα, κατηγορία και σημειώσεις
-- Καταστάσεις ανάγνωσης και στατιστικά
-- Προαιρετικές εικόνες εξωφύλλων
-- Εισαγωγή και εξαγωγή βιβλιοθήκης σε JSON
-- Responsive σχεδιασμός
+## GitHub Pages
 
-## Δημοσίευση
-Στο GitHub άνοιξε **Settings → Pages → Build and deployment**, επίλεξε **Deploy from a branch**, branch **main** και φάκελο **/(root)**, και πάτησε **Save**.
+In **Settings → Pages**, choose **Deploy from a branch**, then select branch `main` and folder `/(root)`.
 
-Η αναμενόμενη διεύθυνση θα είναι:
-https://panagiotagrosdouli.github.io/books/
+The root `index.html` is a static version of the portfolio. Book cover images are stored in `site-source/public/`.
 
-## Σημαντικό: αποθήκευση βιβλίων
-Τα βιβλία που προσθέτεις στην ιστοσελίδα αποθηκεύονται **τοπικά στον browser**, όχι αυτόματα στο GitHub. Δεν συγχρονίζονται μεταξύ συσκευών. Χρησιμοποίησε **Εξαγωγή JSON** για αντίγραφο ασφαλείας και **Εισαγωγή JSON** για επαναφορά.
+## Source
 
-Αν θέλεις ίδια βιβλιοθήκη από πολλές συσκευές, χρειάζεται ξεχωριστή βάση δεδομένων ή άλλη λύση συγχρονισμού.
+The `site-source/` folder contains the original ChatGPT Site source, including its Next.js/Vinext application and assets.
