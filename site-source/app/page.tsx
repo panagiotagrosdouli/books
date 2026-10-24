@@ -113,23 +113,23 @@ const books = [
 
 const collections = [
   {
-    title: "Artificial Minds & Future Memories",
-    description: "AI, consciousness, memory, and futures that refuse to stay contained.",
+    title: "The Machine Within",
+    description: "Artificial minds, fractured memories, and futures shaped by the choices we make today.",
     books: [books[1], books[3], books[4], books[9]],
   },
   {
-    title: "Myths, Love & Hidden Worlds",
-    description: "Ancient legends, unfinished love stories, and places waiting beyond the map.",
+    title: "Myth, Love & the Unseen",
+    description: "Ancient bargains, unfinished love, and hidden places that refuse to stay forgotten.",
     books: [books[0], books[6], books[14], books[17]],
   },
   {
-    title: "Murder, Shadows & Secrets",
-    description: "Detectives, impossible crimes, and secrets concealed in the dark.",
+    title: "Cases in the Dark",
+    description: "Detectives follow the evidence into conspiracies, impossible crimes, and dangerous truths.",
     books: [books[2], books[5], books[7], books[11], books[15], books[16]],
   },
   {
-    title: "Games, Time & Other Realities",
-    description: "Virtual worlds, unstable time, and lives transformed by technology.",
+    title: "Worlds Beyond the Rules",
+    description: "Where time slips, games remember, and reality answers to a different set of rules.",
     books: [books[8], books[10], books[12], books[13]],
   },
 ];
@@ -140,68 +140,68 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="name" href="#top" aria-label="Emma Lk, back to top">EMMA LK<span> / AUTHOR</span></a>
+        <a className="name" href="#top" aria-label="Emma Lk, back to top"><span className="brand-mark">✳</span><span>EMMA LK</span><small>AUTHOR · STORYTELLER</small></a>
         <nav aria-label="Main navigation">
-          <a href="#books">Stories</a>
-          <a href="#about">About</a>
-          <a className="nav-cta" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Wattpad <span aria-hidden="true">↗</span></a>
+          <a href="#books">The books</a>
+          <a href="#about">The writer</a>
+          <a className="nav-cta" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a>
         </nav>
       </header>
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="kicker"><span className="kicker-mark" aria-hidden="true">✳</span> Emma Lk · Original fiction</p>
-          <h1>Between<br />Myth &amp;<br />Machine</h1>
-          <div className="gold-line" aria-hidden="true" />
+          <p className="kicker">Original fiction <span>·</span> Emma Lk</p>
+          <h1>Every world<br />keeps a<br /><em>secret.</em></h1>
+          <div className="gold-line" aria-hidden="true"><span /></div>
           <p className="intro-copy">
-            Stories where love meets legend, memory meets machine, and every
-            mystery opens a door to another world.
+            Ancient myth. Artificial minds. Love, crime, and impossible places.
+            Stories for readers who like the familiar with a hidden door.
           </p>
           <div className="actions">
-            <a className="button primary" href="#books">Explore the stories <span>↓</span></a>
-            <a className="text-link" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Find me on Wattpad <span aria-hidden="true">↗</span></a>
+            <a className="button primary" href="#books">Find your next world <span>↓</span></a>
+            <a className="text-link" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Visit my Wattpad <span aria-hidden="true">↗</span></a>
           </div>
-          <div className="hero-facts" aria-label="About the collection">
-            <div><strong>18</strong><span>original stories</span></div>
-            <div><strong>04</strong><span>fictional worlds</span></div>
-            <div><strong>∞</strong><span>ways to get lost</span></div>
+          <div className="hero-facts" aria-label="About this collection">
+            <div><strong>18</strong><span>stories</span></div>
+            <div><strong>04</strong><span>collections</span></div>
+            <div><strong>01</strong><span>writer's worlds</span></div>
           </div>
         </div>
-        <div className="hero-art" aria-label="A composition of selected book covers by Emma Lk">
-          <span className="art-index">THE STORY SHELF <b>01—18</b></span>
+        <div className="hero-art" aria-label="Selected book covers by Emma Lk">
+          <span className="art-index"><span>FIELD NOTES</span><b>FICTION / 01—18</b></span>
           <div className="cover-showcase">
             <img src="/memory-of-tomorrow.png" alt="The Memory of Tomorrow book cover" />
             <img src="/ensnared-by-love.png" alt="Ensnared by Love book cover" />
             <img src="/architecture-of-restraint.png" alt="The Architecture of Restraint book cover" />
             <img src="/museum-lost-loves.png" alt="The Museum of Lost Loves book cover" />
           </div>
-          <p className="art-caption">A little mystery. A little magic.<br /><em>Always another world.</em></p>
+          <p className="art-caption"><span>FICTION FOR THE CURIOUS</span><br /><em>Turn the page. Cross the line.</em></p>
         </div>
       </section>
 
       <section className="featured" aria-labelledby="featured-title">
-        <div className="featured-label"><span>01</span><p>Start here</p></div>
+        <div className="featured-label"><span>01 / FEATURED</span><p>A story to begin with</p></div>
         <img className="featured-cover" src={featured.cover} alt={`${featured.title} book cover`} />
         <div className="featured-copy">
-          <p className="kicker">Featured story · {featured.genre}</p>
-          <h2 id="featured-title">A legend with a heartbeat.</h2>
+          <p className="kicker">Mythological romance <span>·</span> Fantasy</p>
+          <h2 id="featured-title">Love has teeth.<br /><em>Legends remember.</em></h2>
           <h3>{featured.title}</h3>
           <p>{featured.description}</p>
-          <a className="feature-link" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Step into the story <span aria-hidden="true">↗</span></a>
+          <a className="feature-link" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Read the opening on Wattpad <span aria-hidden="true">↗</span></a>
         </div>
         <div className="featured-sigil" aria-hidden="true">✳</div>
       </section>
 
       <section className="books" id="books" aria-labelledby="books-title">
         <div className="books-intro section-heading">
-          <div><p className="kicker">The collection · 18 stories</p><h2 id="books-title">Choose your world.</h2></div>
-          <p className="section-deck">From ancient myths and unfinished love to code, crime, and the edges of time.</p>
+          <div><p className="kicker">The complete collection <span>·</span> 18 stories</p><h2 id="books-title">What are you<br /><em>in the mood for?</em></h2></div>
+          <p className="section-deck">A strange signal. A body with no witnesses. A city hidden beneath the mountain. Start anywhere.</p>
         </div>
         <div className="collection-stack">
           {collections.map((collection, collectionIndex) => (
             <section className={`collection collection-${collectionIndex + 1}`} key={collection.title}>
               <header className="collection-header">
-                <span>0{collectionIndex + 1}</span>
+                <span>0{collectionIndex + 1}<i aria-hidden="true">✳</i></span>
                 <div>
                   <h3>{collection.title}</h3>
                   <p>{collection.description}</p>
@@ -228,33 +228,36 @@ export default function Home() {
       <section className="about" id="about" aria-labelledby="about-title">
         <div className="section-number">02</div>
         <div className="section-content about-grid">
-          <div className="about-heading"><p className="kicker">A note from the writer</p><h2 id="about-title">Curiosity<br />is the first<br /><em>plot twist.</em></h2></div>
+          <div className="about-heading"><p className="kicker">A note from the writer</p><h2 id="about-title">I write toward<br />the <em>unknown.</em></h2><p className="about-signature">— Emma Lk</p></div>
           <div className="about-copy">
             <p>
-              I write stories about mystery, memory, love, technology, and the
-              unknown. My books move between science fiction, crime, romance,
-              and speculative fantasy, but they all begin with the same
-              question: what happens when ordinary people face something
-              impossible?
+              My stories move between science fiction, crime, romance, and
+              speculative fantasy. They begin with the things that stay with
+              me: a memory that cannot be true, a mystery with no witness, a
+              machine that feels too human, a love story older than its legend.
             </p>
             <p>
-              I enjoy creating atmospheric worlds, complex characters, hidden
-              truths, and stories that stay with the reader after the final
-              chapter. From artificial intelligence and forgotten cities to
-              unsolved murders and unfinished love stories, each book is an
-              invitation to step into a different world.
+              I write for readers who want to feel the atmosphere, follow the
+              clues, and care about the people caught inside the impossible.
+              Every book is an invitation to step beyond the edge of the
+              familiar—and stay until the last page.
             </p>
-            <blockquote>“What happens when ordinary people face something impossible?”</blockquote>
-            <p>I would love for you to find your next favorite world here.</p>
-            <a className="button primary about-button" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a>
+            <a className="button primary about-button" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Read with me on Wattpad <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
 
+      <section className="closing" aria-labelledby="closing-title">
+        <p className="kicker">Your next story is waiting</p>
+        <h2 id="closing-title">Come in.<br /><em>Stay curious.</em></h2>
+        <a className="button light" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Explore Emma's stories <span aria-hidden="true">↗</span></a>
+        <span className="closing-mark" aria-hidden="true">✳</span>
+      </section>
+
       <footer>
-        <a className="footer-brand" href="#top">EMMA LK<span> / AUTHOR</span></a>
-        <span>Stories between myth &amp; machine · © 2026</span>
-        <a href={wattpadProfile} target="_blank" rel="noopener noreferrer">Wattpad profile ↗</a>
+        <a className="footer-brand" href="#top"><span className="brand-mark">✳</span> EMMA LK</a>
+        <span>Fiction for the curious · © 2026 Emma Lk</span>
+        <a href={wattpadProfile} target="_blank" rel="noopener noreferrer">Wattpad ↗</a>
       </footer>
     </main>
   );
