@@ -135,14 +135,37 @@ const collections = [
 ];
 
 export default function Home() {
-  const featured = books[0];
+  const firstSteps = [
+    {
+      label: "A mystery with one clue",
+      hook: "A man is shot on a quiet bench. No witnesses. One silver cufflink.",
+      title: "The Park Bench Murder",
+      cover: books[7].cover,
+      alt: books[7].title,
+    },
+    {
+      label: "A future that remembers you",
+      hook: "What if your mind began remembering things that have not happened yet?",
+      title: "The Memory of Tomorrow",
+      cover: books[1].cover,
+      alt: books[1].title,
+    },
+    {
+      label: "A love story with a mythic edge",
+      hook: "An ancient call beneath the sea. A love caught between humanity and myth.",
+      title: "Ensnared by Love",
+      cover: books[0].cover,
+      alt: books[0].title,
+    },
+  ];
 
   return (
     <main>
       <header className="site-header">
         <a className="name" href="#top" aria-label="Emma Lk, back to top"><span className="brand-mark">✳</span><span>EMMA LK</span><small>AUTHOR · STORYTELLER</small></a>
         <nav aria-label="Main navigation">
-          <a href="#books">The books</a>
+          <a href="#start-here">Start here</a>
+          <a href="#books">All stories</a>
           <a href="#about">The writer</a>
           <a className="nav-cta" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a>
         </nav>
@@ -150,21 +173,21 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="kicker">Original fiction <span>·</span> Emma Lk</p>
-          <h1>Every world<br />keeps a<br /><em>secret.</em></h1>
+          <p className="kicker">For the curious <span>·</span> Emma Lk</p>
+          <h1>One good<br />story can<br /><em>change you.</em></h1>
           <div className="gold-line" aria-hidden="true"><span /></div>
           <p className="intro-copy">
-            Ancient myth. Artificial minds. Love, crime, and impossible places.
-            Stories for readers who like the familiar with a hidden door.
+            No reading list. No pressure. Just a mystery, a myth, or a future
+            you might want to follow for one more page.
           </p>
           <div className="actions">
-            <a className="button primary" href="#books">Find your next world <span>↓</span></a>
-            <a className="text-link" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Visit my Wattpad <span aria-hidden="true">↗</span></a>
+            <a className="button primary" href="#start-here">Find your first story <span>↓</span></a>
+            <a className="text-link" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Meet me on Wattpad <span aria-hidden="true">↗</span></a>
           </div>
-          <div className="hero-facts" aria-label="About this collection">
-            <div><strong>18</strong><span>stories</span></div>
-            <div><strong>04</strong><span>collections</span></div>
-            <div><strong>01</strong><span>writer's worlds</span></div>
+          <div className="hero-facts" aria-label="Explore the stories">
+            <div><strong>18</strong><span>stories to try</span></div>
+            <div><strong>04</strong><span>kinds of worlds</span></div>
+            <div><strong>01</strong><span>page at a time</span></div>
           </div>
         </div>
         <div className="hero-art" aria-label="Selected book covers by Emma Lk">
@@ -179,23 +202,32 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="featured" aria-labelledby="featured-title">
-        <div className="featured-label"><span>01 / FEATURED</span><p>A story to begin with</p></div>
-        <img className="featured-cover" src={featured.cover} alt={`${featured.title} book cover`} />
-        <div className="featured-copy">
-          <p className="kicker">Mythological romance <span>·</span> Fantasy</p>
-          <h2 id="featured-title">Love has teeth.<br /><em>Legends remember.</em></h2>
-          <h3>{featured.title}</h3>
-          <p>{featured.description}</p>
-          <a className="feature-link" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Read the opening on Wattpad <span aria-hidden="true">↗</span></a>
+      <section className="start-here" id="start-here" aria-labelledby="start-title">
+        <div className="start-heading">
+          <p className="kicker">Not sure books are your thing?</p>
+          <h2 id="start-title">Start with an idea.</h2>
+          <p>Pick the premise that makes you curious. If you want to know what happens next, the story is waiting on Wattpad.</p>
         </div>
-        <div className="featured-sigil" aria-hidden="true">✳</div>
+        <div className="gateway-grid">
+          {firstSteps.map((step, index) => (
+            <article className={`gateway-card gateway-${index + 1}`} key={step.title}>
+              <div className="gateway-art"><img src={step.cover} alt={`${step.alt} book cover`} loading="lazy" /><span>0{index + 1}</span></div>
+              <div className="gateway-copy">
+                <p className="gateway-label">{step.label}</p>
+                <h3>{step.hook}</h3>
+                <p className="gateway-title">Start with <strong>{step.title}</strong></p>
+                <a href={wattpadProfile} target="_blank" rel="noopener noreferrer">Find it on Wattpad <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          ))}
+        </div>
+        <p className="start-note">No commitment. Follow the story for a page—or as far as it takes you.</p>
       </section>
 
       <section className="books" id="books" aria-labelledby="books-title">
         <div className="books-intro section-heading">
-          <div><p className="kicker">The complete collection <span>·</span> 18 stories</p><h2 id="books-title">What are you<br /><em>in the mood for?</em></h2></div>
-          <p className="section-deck">A strange signal. A body with no witnesses. A city hidden beneath the mountain. Start anywhere.</p>
+          <div><p className="kicker">The complete collection <span>·</span> 18 stories</p><h2 id="books-title">Stay for<br /><em>another world.</em></h2></div>
+          <p className="section-deck">Mystery, myth, artificial minds, and places that do not appear on any map. Find the premise that stays with you.</p>
         </div>
         <div className="collection-stack">
           {collections.map((collection, collectionIndex) => (
@@ -248,9 +280,9 @@ export default function Home() {
       </section>
 
       <section className="closing" aria-labelledby="closing-title">
-        <p className="kicker">Your next story is waiting</p>
-        <h2 id="closing-title">Come in.<br /><em>Stay curious.</em></h2>
-        <a className="button light" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Explore Emma's stories <span aria-hidden="true">↗</span></a>
+        <p className="kicker">Just one more page</p>
+        <h2 id="closing-title">See where<br /><em>the story goes.</em></h2>
+        <a className="button light" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Choose a story on Wattpad <span aria-hidden="true">↗</span></a>
         <span className="closing-mark" aria-hidden="true">✳</span>
       </section>
 

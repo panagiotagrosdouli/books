@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Emma Lk | Fiction for the Curious",
   description:
-    "Step into 18 original stories by Emma Lk: ancient myth, artificial minds, love, crime, and impossible worlds.",
+    "Not sure you love books? Start with a mystery, an impossible memory, or a love story caught between myth and humanity.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
