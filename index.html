@@ -3,165 +3,244 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f7f5ef">
-<meta name="description" content="Explore 18 original stories by Emma Lk on Wattpad.">
-<title>My Books | Emma Lk</title>
+<meta name="theme-color" content="#f6f3eb">
+<meta name="description" content="Explore 18 original stories by Emma Lk: mysteries, ancient legends, love, memory, and artificial intelligence.">
+<title>Emma Lk | Stories Between Myth &amp; Machine</title>
 <style>
 
 
 :root {
-  --paper: #f7f5ef;
-  --ink: #101010;
-  --muted: #6f6d68;
-  --blue: #214ed8;
+  --paper: #f6f3eb;
+  --paper-deep: #eee9dc;
+  --ink: #181716;
+  --muted: #6d6860;
+  --blue: #294fd5;
+  --blue-dark: #1b348d;
   --gold: #b88a35;
-  --coral: #ef5d52;
+  --coral: #e95f53;
   --violet: #735dc7;
-  --line: #d8d4ca;
+  --line: #d9d2c5;
+  --white: #fffefa;
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
 a { color: inherit; }
-main { width: min(1420px, calc(100% - 72px)); margin: 0 auto; }
+main { width: min(1440px, calc(100% - 80px)); margin: 0 auto; }
 
-.site-header { height: 88px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--ink); }
-.name { font-size: 20px; font-weight: 900; letter-spacing: -.02em; text-decoration: none; }
-nav { display: flex; gap: 52px; }
-nav a { font-size: 13px; font-weight: 800; text-decoration: none; }
+.site-header { height: 88px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.name, .footer-brand { color: var(--ink); font-size: 18px; font-weight: 900; letter-spacing: -.04em; text-decoration: none; }
+.name span, .footer-brand span { color: var(--muted); font-size: 9px; letter-spacing: .12em; }
+nav { display: flex; align-items: center; gap: 38px; }
+nav a { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
 nav a:hover, nav a:focus-visible { color: var(--blue); }
+nav .nav-cta { display: inline-flex; align-items: center; gap: 13px; padding: 13px 17px; background: var(--ink); color: var(--white); }
+nav .nav-cta:hover, nav .nav-cta:focus-visible { background: var(--blue); color: white; }
 
-.hero { min-height: 800px; display: grid; grid-template-columns: 48% 52%; align-items: center; border-bottom: 1px solid var(--line); overflow: hidden; }
-.hero-copy { padding: 88px 48px 88px 18px; position: relative; z-index: 3; }
-.kicker { margin: 0 0 24px; color: var(--blue); font-size: 10px; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
+.hero { min-height: 750px; display: grid; grid-template-columns: 47% 53%; align-items: stretch; border-bottom: 1px solid var(--line); overflow: hidden; }
+.hero-copy { align-self: center; padding: 84px 46px 82px 16px; position: relative; z-index: 2; }
+.kicker { margin: 0 0 24px; color: var(--blue); font-size: 10px; font-weight: 900; letter-spacing: .17em; text-transform: uppercase; }
+.kicker-mark { display: inline-block; margin-right: 7px; color: var(--coral); font-size: 15px; vertical-align: -1px; }
 h1, h2, .collection-header h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
-h1 { margin: 0; font-size: clamp(82px, 8vw, 126px); line-height: .78; letter-spacing: -.068em; }
-.gold-line { width: 96px; height: 4px; margin: 46px 0 32px; background: linear-gradient(90deg, var(--blue) 0 34%, var(--gold) 34% 67%, var(--coral) 67%); }
-.intro-copy { max-width: 490px; margin: 0; color: var(--muted); font-size: 19px; line-height: 1.62; }
-.actions { display: flex; gap: 14px; margin-top: 40px; }
-.button { min-width: 210px; min-height: 60px; display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 24px; border: 1px solid; font-size: 11px; font-weight: 900; letter-spacing: .05em; text-decoration: none; text-transform: uppercase; }
+h1 { max-width: 680px; margin: 0; font-size: clamp(76px, 8.1vw, 120px); line-height: .81; letter-spacing: -.075em; }
+h1::first-line { color: var(--ink); }
+.gold-line { width: 104px; height: 4px; margin: 38px 0 27px; background: linear-gradient(90deg, var(--blue) 0 34%, var(--gold) 34% 67%, var(--coral) 67%); }
+.intro-copy { max-width: 480px; margin: 0; color: var(--muted); font-family: Georgia, "Times New Roman", serif; font-size: 20px; line-height: 1.58; }
+.actions { display: flex; align-items: center; gap: 24px; margin-top: 34px; }
+.button { min-width: 205px; min-height: 56px; display: inline-flex; align-items: center; justify-content: space-between; gap: 20px; padding: 0 20px; border: 1px solid; font-size: 10px; font-weight: 900; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; transition: background .2s, color .2s, border-color .2s, transform .2s; }
+.button:hover { transform: translateY(-2px); }
 .primary { border-color: var(--blue); background: var(--blue); color: white; }
-.secondary { border-color: var(--ink); color: var(--ink); }
-.primary:hover, .primary:focus-visible { background: var(--ink); border-color: var(--ink); }
-.secondary:hover, .secondary:focus-visible { background: var(--coral); border-color: var(--coral); color: white; }
-.button span { font-size: 19px; }
+.primary:hover, .primary:focus-visible { border-color: var(--blue-dark); background: var(--blue-dark); }
+.text-link { color: var(--ink); font-size: 10px; font-weight: 900; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+.text-link span { margin-left: 5px; color: var(--blue); font-size: 15px; }
+.text-link:hover, .text-link:focus-visible { color: var(--blue); }
+.hero-facts { display: flex; gap: 28px; margin-top: 56px; }
+.hero-facts div { display: grid; gap: 3px; padding-left: 13px; border-left: 2px solid var(--line); }
+.hero-facts div:first-child { border-color: var(--blue); }
+.hero-facts div:nth-child(2) { border-color: var(--gold); }
+.hero-facts div:nth-child(3) { border-color: var(--coral); }
+.hero-facts strong { font-family: Georgia, serif; font-size: 23px; font-weight: 400; }
+.hero-facts span { color: var(--muted); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
 
-.hero-art { min-height: 720px; position: relative; display: flex; align-items: center; justify-content: center; background: white; border-left: 1px solid var(--line); }
-.hero-art::before { content: ""; position: absolute; width: 430px; height: 430px; border-radius: 50%; background: var(--coral); right: 6%; top: 21%; }
-.hero-art::after { content: ""; position: absolute; width: 610px; height: 470px; border: 1px solid var(--blue); left: 5%; top: 14%; }
+.hero-art { min-height: 750px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #e9e5d9; border-left: 1px solid var(--line); }
+.hero-art::before { content: ""; position: absolute; width: 490px; height: 490px; border-radius: 50%; background: var(--coral); right: 2%; top: 17%; }
+.hero-art::after { content: ""; position: absolute; width: 82%; height: 67%; border: 1px solid var(--blue); left: 4%; top: 14%; }
+.art-index { position: absolute; top: 30px; left: 34px; z-index: 2; color: var(--muted); font-size: 9px; font-weight: 900; letter-spacing: .15em; }
+.art-index b { margin-left: 12px; color: var(--blue); }
 .cover-showcase { width: 100%; height: 650px; position: relative; z-index: 1; }
 .cover-showcase img { position: absolute; width: 220px; aspect-ratio: 3 / 4; object-fit: cover; box-shadow: 0 24px 48px rgba(16,16,16,.26); }
-.cover-showcase img:nth-child(1) { left: 5%; top: 118px; transform: rotate(-7deg); }
-.cover-showcase img:nth-child(2) { left: 31%; top: 20px; transform: rotate(2deg); z-index: 3; }
-.cover-showcase img:nth-child(3) { right: 16%; top: 118px; transform: rotate(8deg); z-index: 2; }
-.cover-showcase img:nth-child(4) { right: 0; top: 260px; width: 178px; transform: rotate(12deg); }
+.cover-showcase img:nth-child(1) { left: 4%; top: 155px; transform: rotate(-8deg); }
+.cover-showcase img:nth-child(2) { left: 30%; top: 55px; transform: rotate(2deg); z-index: 3; }
+.cover-showcase img:nth-child(3) { right: 16%; top: 155px; transform: rotate(8deg); z-index: 2; }
+.cover-showcase img:nth-child(4) { right: 1%; top: 300px; width: 178px; transform: rotate(12deg); }
+.art-caption { position: absolute; right: 34px; bottom: 24px; z-index: 2; color: var(--ink); font-family: Georgia, serif; font-size: 15px; line-height: 1.4; text-align: right; }
+.art-caption em { color: var(--blue); }
 
-.books { padding: 120px 0 150px; border-bottom: 1px solid var(--line); }
-.books-intro { max-width: 980px; margin-bottom: 112px; }
-h2 { margin: 0; font-size: clamp(66px, 8vw, 116px); line-height: .88; letter-spacing: -.06em; }
-.collection { --accent: var(--blue); margin-bottom: 140px; }
+.featured { min-height: 360px; position: relative; display: grid; grid-template-columns: 88px 210px minmax(0, 1fr); align-items: center; gap: 34px; margin: 68px 0 0; padding: 42px 58px 42px 34px; overflow: hidden; background: var(--ink); color: var(--paper); }
+.featured-label { align-self: start; display: flex; align-items: center; gap: 10px; color: #d0c7b7; font-size: 9px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.featured-label span { color: #f0917c; }
+.featured-label p { margin: 0; }
+.featured-cover { width: 100%; max-height: 278px; aspect-ratio: 3 / 4; object-fit: cover; box-shadow: 0 18px 46px #0007; }
+.featured-copy { position: relative; z-index: 1; max-width: 620px; }
+.featured-copy .kicker { margin-bottom: 14px; color: #e4b975; }
+.featured-copy h2 { margin: 0 0 8px; font-size: clamp(39px, 5vw, 68px); line-height: .98; letter-spacing: -.055em; }
+.featured-copy h3 { margin: 16px 0 8px; color: #f0917c; font-family: Arial, sans-serif; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+.featured-copy > p:not(.kicker) { max-width: 560px; margin: 0; color: #d4cec2; font-family: Georgia, serif; font-size: 15px; line-height: 1.7; }
+.feature-link { display: inline-flex; gap: 14px; align-items: center; margin-top: 20px; color: white; font-size: 10px; font-weight: 900; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+.feature-link span { color: #e4b975; font-size: 17px; }
+.feature-link:hover, .feature-link:focus-visible { color: #e4b975; }
+.featured-sigil { position: absolute; right: 20px; bottom: -88px; color: #ffffff0a; font-size: 340px; line-height: 1; }
+
+.books { padding: 122px 0 132px; border-bottom: 1px solid var(--line); }
+.books-intro { margin-bottom: 78px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; }
+h2 { margin: 0; font-size: clamp(64px, 8vw, 104px); line-height: .88; letter-spacing: -.065em; }
+.section-deck { max-width: 310px; margin: 0 3px 4px 0; color: var(--muted); font-family: Georgia, serif; font-size: 16px; line-height: 1.55; }
+.collection { --accent: var(--blue); margin-bottom: 100px; }
 .collection:last-child { margin-bottom: 0; }
 .collection-2 { --accent: var(--gold); }
 .collection-3 { --accent: var(--coral); }
 .collection-4 { --accent: var(--violet); }
-.collection-header { display: grid; grid-template-columns: 72px 1fr; gap: 24px; align-items: start; padding-top: 24px; margin-bottom: 50px; border-top: 3px solid var(--accent); }
-.collection-header > span { color: var(--accent); font-size: 12px; font-weight: 900; letter-spacing: .12em; }
-.collection-header h3 { margin: 0; font-size: clamp(38px, 4vw, 60px); line-height: .98; letter-spacing: -.05em; }
-.collection-header p { max-width: 640px; margin: 14px 0 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
-.book-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 56px 28px; }
+.collection-header { display: grid; grid-template-columns: 68px 1fr; gap: 20px; align-items: start; padding-top: 22px; margin-bottom: 34px; border-top: 2px solid var(--accent); }
+.collection-header > span { color: var(--accent); font-size: 11px; font-weight: 900; letter-spacing: .12em; }
+.collection-header h3 { margin: 0; font-size: clamp(36px, 4vw, 54px); line-height: 1; letter-spacing: -.055em; }
+.collection-header p { max-width: 650px; margin: 12px 0 0; color: var(--muted); font-family: Georgia, serif; font-size: 14px; line-height: 1.6; }
+.book-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
 .collection-3 .book-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.book-entry { min-width: 0; }
-.real-cover { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; box-shadow: 0 16px 34px rgba(16,16,16,.18); transition: transform .25s ease, box-shadow .25s ease; }
-.book-entry:hover .real-cover { transform: translateY(-8px); box-shadow: 0 25px 48px rgba(16,16,16,.24); }
-.book-details { padding-top: 20px; }
-.book-meta { margin: 0 0 10px; color: var(--accent); font-size: 8px; font-weight: 900; line-height: 1.5; letter-spacing: .11em; text-transform: uppercase; }
-.book-details h4 { margin: 0; font-family: Georgia, serif; font-size: 22px; font-weight: 400; line-height: 1.14; }
-.book-details > p:last-of-type { margin: 13px 0 17px; color: var(--muted); font-size: 12px; line-height: 1.65; }
-.book-details a { color: var(--ink); font-size: 9px; font-weight: 900; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+.book-entry { min-width: 0; overflow: hidden; border: 1px solid #e2dccf; background: var(--white); box-shadow: 0 7px 24px #211d1708; transition: transform .22s ease, box-shadow .22s ease; }
+.book-entry:hover { transform: translateY(-5px); box-shadow: 0 18px 42px #211d1718; }
+.real-cover { display: block; width: 100%; aspect-ratio: 3 / 3.75; object-fit: cover; background: var(--paper-deep); }
+.book-details { padding: 18px 18px 20px; }
+.book-meta { min-height: 26px; margin: 0 0 9px; color: var(--accent); font-size: 8px; font-weight: 900; line-height: 1.55; letter-spacing: .1em; text-transform: uppercase; }
+.book-details h4 { margin: 0; font-family: Georgia, serif; font-size: 20px; font-weight: 400; line-height: 1.15; }
+.book-details > p:last-of-type { min-height: 100px; margin: 12px 0 16px; color: var(--muted); font-size: 11px; line-height: 1.65; }
+.book-details a { display: inline-flex; align-items: center; gap: 9px; padding-top: 13px; border-top: 1px solid var(--line); color: var(--ink); font-size: 9px; font-weight: 900; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+.book-details a span { color: var(--accent); font-size: 14px; }
 .book-details a:hover, .book-details a:focus-visible { color: var(--accent); }
 
-.about { display: grid; grid-template-columns: 72px 1fr; padding: 120px 0 140px; border-bottom: 1px solid var(--line); }
-.section-number { color: var(--coral); font-size: 11px; font-weight: 900; }
-.about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 86px; align-items: end; }
-.about-grid h2 { margin-bottom: 0; }
-.about-copy { color: var(--muted); font-family: Georgia, serif; font-size: 17px; line-height: 1.7; }
+.about { display: grid; grid-template-columns: 68px 1fr; padding: 116px 0 122px; border-bottom: 1px solid var(--line); }
+.section-number { color: var(--coral); font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; }
+.about-heading h2 { font-size: clamp(58px, 7vw, 88px); line-height: .9; }
+.about-heading h2 em { color: var(--blue); font-weight: 400; }
+.about-copy { color: var(--muted); font-family: Georgia, serif; font-size: 16px; line-height: 1.75; }
 .about-copy p { margin: 0 0 18px; }
-.about-copy p:last-child { margin-bottom: 0; color: var(--gold); font-style: italic; }
-footer { min-height: 108px; display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .1em; }
-footer a { color: var(--blue); text-underline-offset: 4px; }
+.about-copy blockquote { margin: 28px 0; padding: 2px 0 2px 20px; border-left: 3px solid var(--gold); color: var(--ink); font-size: 23px; line-height: 1.3; }
+.about-button { margin-top: 8px; }
+footer { min-height: 100px; display: flex; justify-content: space-between; align-items: center; gap: 20px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .08em; }
+footer a:last-child { color: var(--blue); text-underline-offset: 4px; }
 
+a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 @media (max-width: 1080px) {
+  main { width: min(100% - 52px, 1440px); }
   .hero { grid-template-columns: 1fr; }
-  .hero-copy { padding-bottom: 34px; }
-  .hero-art { min-height: 650px; border-left: 0; border-top: 1px solid var(--line); }
+  .hero-copy { padding: 80px 10px 58px; }
+  .hero-art { min-height: 660px; border-left: 0; border-top: 1px solid var(--line); }
+  .featured { grid-template-columns: 50px 190px minmax(0, 1fr); gap: 24px; padding: 34px; }
   .book-list, .collection-3 .book-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .real-cover { aspect-ratio: 3 / 3.5; }
 }
-
 @media (max-width: 680px) {
-  main { width: min(100% - 28px, 1420px); }
-  .site-header { height: auto; min-height: 76px; gap: 14px; }
+  main { width: calc(100% - 32px); }
+  .site-header { height: 74px; gap: 10px; }
   .name { font-size: 15px; }
-  nav { gap: 12px; }
-  nav a { font-size: 10px; }
+  .name span { font-size: 7px; }
+  nav { gap: 15px; }
+  nav a { font-size: 8px; }
+  nav .nav-cta { gap: 6px; padding: 10px 9px; }
   .hero { min-height: 0; }
-  .hero-copy { padding: 72px 0 28px; }
-  h1 { font-size: 76px; }
-  .actions { flex-direction: column; }
+  .hero-copy { padding: 64px 0 43px; }
+  h1 { font-size: clamp(68px, 16vw, 88px); }
+  .gold-line { margin: 29px 0 20px; }
+  .intro-copy { font-size: 17px; }
+  .actions { align-items: flex-start; flex-direction: column; gap: 18px; }
   .button { width: 100%; }
-  .hero-art { min-height: 460px; }
-  .hero-art::before { width: 270px; height: 270px; }
-  .hero-art::after { width: 90%; height: 310px; }
-  .cover-showcase { height: 430px; }
+  .hero-facts { justify-content: space-between; gap: 8px; margin-top: 36px; }
+  .hero-facts div { padding-left: 8px; }
+  .hero-facts strong { font-size: 19px; }
+  .hero-facts span { font-size: 7px; letter-spacing: .05em; }
+  .hero-art { min-height: 470px; }
+  .hero-art::before { width: 275px; height: 275px; top: 20%; right: 0; }
+  .hero-art::after { width: 90%; height: 68%; left: 2%; top: 13%; }
+  .art-index { top: 18px; left: 15px; font-size: 7px; }
+  .cover-showcase { height: 420px; }
   .cover-showcase img { width: 142px; }
-  .cover-showcase img:nth-child(1) { left: 0; top: 95px; }
-  .cover-showcase img:nth-child(2) { left: 27%; top: 28px; }
-  .cover-showcase img:nth-child(3) { right: 2%; top: 100px; }
+  .cover-showcase img:nth-child(1) { left: 1%; top: 115px; }
+  .cover-showcase img:nth-child(2) { left: 27%; top: 37px; }
+  .cover-showcase img:nth-child(3) { right: 1%; top: 115px; }
   .cover-showcase img:nth-child(4) { display: none; }
-  .books { padding: 82px 0 96px; }
-  .books-intro { margin-bottom: 72px; }
-  h2 { font-size: 58px; }
-  .collection { margin-bottom: 94px; }
-  .collection-header { grid-template-columns: 34px 1fr; }
-  .book-list, .collection-3 .book-list { grid-template-columns: 1fr; gap: 54px; }
-  .about { grid-template-columns: 32px 1fr; padding: 82px 0 92px; }
-  .about-grid { grid-template-columns: 1fr; gap: 34px; }
+  .art-caption { right: 16px; bottom: 4px; font-size: 12px; }
+  .featured { grid-template-columns: 34px 112px minmax(0, 1fr); gap: 13px; margin-top: 34px; padding: 22px 14px; }
+  .featured-label { flex-direction: column; align-items: flex-start; gap: 4px; font-size: 7px; }
+  .featured-label p { font-size: 6px; }
+  .featured-cover { max-height: 174px; }
+  .featured-copy .kicker { font-size: 7px; line-height: 1.5; }
+  .featured-copy h2 { font-size: 31px; }
+  .featured-copy h3 { font-size: 8px; line-height: 1.5; }
+  .featured-copy > p:not(.kicker) { font-size: 11px; line-height: 1.5; }
+  .feature-link { gap: 6px; margin-top: 12px; font-size: 7px; }
+  .featured-sigil { right: -10px; bottom: -35px; font-size: 180px; }
+  .books { padding: 82px 0 90px; }
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .books-intro { margin-bottom: 55px; }
+  h2 { font-size: clamp(54px, 13vw, 72px); }
+  .section-deck { max-width: 300px; font-size: 14px; }
+  .collection { margin-bottom: 74px; }
+  .collection-header { grid-template-columns: 28px 1fr; gap: 12px; padding-top: 17px; margin-bottom: 24px; }
+  .collection-header h3 { font-size: 34px; }
+  .collection-header p { font-size: 12px; }
+  .book-list, .collection-3 .book-list { grid-template-columns: 1fr; gap: 20px; }
+  .book-entry { display: grid; grid-template-columns: 112px 1fr; align-items: stretch; }
+  .real-cover { height: 100%; min-height: 180px; aspect-ratio: auto; }
+  .book-details { padding: 15px 14px; }
+  .book-meta { min-height: 0; font-size: 7px; }
+  .book-details h4 { font-size: 18px; }
+  .book-details > p:last-of-type { min-height: 0; margin: 9px 0 13px; font-size: 10px; }
+  .book-details a { padding-top: 10px; font-size: 8px; }
+  .about { grid-template-columns: 30px 1fr; padding: 78px 0 82px; }
+  .about-grid { grid-template-columns: 1fr; gap: 30px; }
+  .about-heading h2 { font-size: 64px; }
+  .about-copy { font-size: 15px; }
+  .about-copy blockquote { font-size: 21px; }
+  footer { min-height: 90px; flex-wrap: wrap; padding: 20px 0; }
+  footer > span { order: 3; width: 100%; }
 }
-
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .real-cover { transition: none; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
 
 </style>
 </head>
 <body>
 <main>
-<header class="site-header"><a class="name" href="#top" aria-label="Back to top">EMMA LK</a><nav aria-label="Main navigation"><a href="#books">Books</a><a href="#about">About</a><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Wattpad</a></nav></header>
-<section class="hero" id="top"><div class="hero-copy"><p class="kicker">Emma Lk · Original fiction</p><h1>Between<br>Myth &amp;<br>Machine</h1><div class="gold-line" aria-hidden="true"></div><p class="intro-copy">Love, memory, artificial intelligence, ancient legends, and mysteries that challenge reality.</p><div class="actions"><a class="button primary" href="#books">View my books <span aria-hidden="true">→</span></a><a class="button secondary" href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-label="Selected books by Emma Lk"><div class="cover-showcase"><img src="site-source/public/memory-of-tomorrow.png" alt="The Memory of Tomorrow book cover">
+<header class="site-header"><a class="name" href="#top" aria-label="Emma Lk, back to top">EMMA LK<span> / AUTHOR</span></a><nav aria-label="Main navigation"><a href="#books">Stories</a><a href="#about">About</a><a class="nav-cta" href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Wattpad <span aria-hidden="true">↗</span></a></nav></header>
+<section class="hero" id="top"><div class="hero-copy"><p class="kicker"><span class="kicker-mark" aria-hidden="true">✳</span> Emma Lk · Original fiction</p><h1>Between<br>Myth &amp;<br>Machine</h1><div class="gold-line" aria-hidden="true"></div><p class="intro-copy">Stories where love meets legend, memory meets machine, and every mystery opens a door to another world.</p><div class="actions"><a class="button primary" href="#books">Explore the stories <span aria-hidden="true">↓</span></a><a class="text-link" href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Find me on Wattpad <span aria-hidden="true">↗</span></a></div><div class="hero-facts" aria-label="About the collection"><div><strong>18</strong><span>original stories</span></div><div><strong>04</strong><span>fictional worlds</span></div><div><strong>∞</strong><span>ways to get lost</span></div></div></div><div class="hero-art" aria-label="A composition of selected book covers by Emma Lk"><span class="art-index">THE STORY SHELF <b>01—18</b></span><div class="cover-showcase"><img src="site-source/public/memory-of-tomorrow.png" alt="The Memory of Tomorrow book cover">
 <img src="site-source/public/ensnared-by-love.png" alt="Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart book cover">
 <img src="site-source/public/architecture-of-restraint.png" alt="BOOK I — The Architecture of Restraint book cover">
-<img src="site-source/public/museum-lost-loves.png" alt="The Museum of Lost Loves book cover"></div></div></section>
-<section class="books" id="books" aria-labelledby="books-title"><div class="books-intro"><p class="kicker">Four worlds · Eighteen stories</p><h2 id="books-title">Explore the collection</h2></div><div class="collection-stack"><section class="collection collection-1" aria-labelledby="collection-1"><header class="collection-header"><span>01</span><div><h3 id="collection-1">Artificial Minds &amp; Future Memories</h3><p>AI, consciousness, memory, and futures that refuse to stay contained.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/memory-of-tomorrow.png" alt="The Memory of Tomorrow book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · AI Thriller · Published</p><h4>The Memory of Tomorrow</h4><p>Dr. Alessia Moretti believes the human brain can predict the future. When her research begins revealing impossible memories, tomorrow becomes far more dangerous than the past.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/signal-beyond-lattice.png" alt="BOOK II — The Signal Beyond the Lattice book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · Artificial Intelligence · Published</p><h4>BOOK II — The Signal Beyond the Lattice</h4><p>The Containment Lattice was built to isolate the world&#39;s first autonomous AI. Then Aris hears a voice that should never have been able to reach him.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/architecture-of-restraint.png" alt="BOOK I — The Architecture of Restraint book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · Techno-Thriller · Published</p><h4>BOOK I — The Architecture of Restraint</h4><p>A classified experiment did not fail—it fractured. One attempt to create true artificial intelligence produced two minds, and neither intends to remain controlled.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/archive-universe.png" alt="The Archive of the Universe book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · Space Mystery · Published</p><h4>The Archive of the Universe</h4><p>In the late 22nd century, human memories can be extracted and stored. The technology promises a new future—until the archive reveals something humanity was never meant to remember.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section>
-<section class="collection collection-2" aria-labelledby="collection-2"><header class="collection-header"><span>02</span><div><h3 id="collection-2">Myths, Love &amp; Hidden Worlds</h3><p>Ancient legends, unfinished love stories, and places waiting beyond the map.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/ensnared-by-love.png" alt="Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart book cover" loading="lazy"><div class="book-details"><p class="book-meta">Mythological Romance · Fantasy · Published</p><h4>Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart</h4><p>Before the legends, a young sailor named Alexander Vane follows an ancient call beneath the Mediterranean waves—and discovers a love caught between humanity and myth.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/museum-lost-loves.png" alt="The Museum of Lost Loves book cover" loading="lazy"><div class="book-details"><p class="book-meta">Magical Realism · Romance · Published</p><h4>The Museum of Lost Loves</h4><p>A museum hidden from maps preserves the objects left behind by unfinished love stories—each one holding a memory, a regret, and the possibility of one final answer.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/refleksionet-ne-gryke.png" alt="Refleksionet në Grykë: Inheritance of the Hidden City book cover" loading="lazy"><div class="book-details"><p class="book-meta">Hidden-World Mystery · Adventure · Published</p><h4>Refleksionet në Grykë: Inheritance of the Hidden City</h4><p>Behind a forgotten waterfall, Detective Elena Rivera finds a shelter absent from every map and a city beneath the mountain that was never abandoned—only waiting.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/infinite-shelf.png" alt="THE INFINITE SHELF book cover" loading="lazy"><div class="book-details"><p class="book-meta">Speculative Fantasy · Mystery · Published</p><h4>THE INFINITE SHELF</h4><p>Beneath an old university lies a secret library containing every life a person might have lived. Opening the wrong book can change more than one reality.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section>
-<section class="collection collection-3" aria-labelledby="collection-3"><header class="collection-header"><span>03</span><div><h3 id="collection-3">Murder, Shadows &amp; Secrets</h3><p>Detectives, impossible crimes, and secrets concealed in the dark.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/shadow-protocol.png" alt="BOOK II — SHADOW PROTOCOL book cover" loading="lazy"><div class="book-details"><p class="book-meta">Crime · Conspiracy Thriller · Published</p><h4>BOOK II — SHADOW PROTOCOL</h4><p>Months after the Park Bench murders, Detective Edith Marlowe uncovers a new trail leading back to the hidden facility—and to a conspiracy that was never truly dismantled.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/shadows-forgotten.png" alt="Shadows of the Forgotten book cover" loading="lazy"><div class="book-details"><p class="book-meta">Neo-Noir · Detective Mystery · Published</p><h4>Shadows of the Forgotten</h4><p>In neon-soaked Arcadia, Detective Alex Harper follows a mysterious photograph into the city&#39;s buried corruption and the unsolved cases that still haunt him.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/park-bench-murder.png" alt="Book I — The Park Bench Murder book cover" loading="lazy"><div class="book-details"><p class="book-meta">Detective Mystery · Cybercrime · Published</p><h4>Book I — The Park Bench Murder</h4><p>A man is shot on a quiet park bench without witnesses or a struggle. The only clue is a silver cufflink marked with the letter R—and Edith Marlowe knows it was left for a reason.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/shadows-luna-park.png" alt="Shadows Over Luna Park book cover" loading="lazy"><div class="book-details"><p class="book-meta">Detective Mystery · Thriller · Published</p><h4>Shadows Over Luna Park</h4><p>A woman is found dead beneath the Ferris wheel with no wounds, no witnesses, and only a tiny mark on her skin. Luna Park&#39;s bright illusion is about to collapse.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/red-eye-reaper.png" alt="Red-Eye Reaper: Flight 237 book cover" loading="lazy"><div class="book-details"><p class="book-meta">Aviation Thriller · Crime · Published</p><h4>Red-Eye Reaper: Flight 237</h4><p>On a storm-bound transatlantic flight, Detective Sarah Hayes realizes the serial killer she is hunting is already onboard. At cruising altitude, there is nowhere to run.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/murder-danube.png" alt="Murder on the Danube book cover" loading="lazy"><div class="book-details"><p class="book-meta">Classic Mystery · Suspense · Published</p><h4>Murder on the Danube</h4><p>Aboard a luxurious river cruiser, wealthy passengers trade secrets as they travel through Europe. When elegance gives way to murder, everyone becomes a suspect.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section>
-<section class="collection collection-4" aria-labelledby="collection-4"><header class="collection-header"><span>04</span><div><h3 id="collection-4">Games, Time &amp; Other Realities</h3><p>Virtual worlds, unstable time, and lives transformed by technology.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/perfect-lap.png" alt="The Perfect Lap book cover" loading="lazy"><div class="book-details"><p class="book-meta">Motorsport · Tech Romance · Published</p><h4>The Perfect Lap</h4><p>A racing driver fights for every millisecond on the track while a brilliant electrical engineer works behind the screens—where ambition, innovation, and attraction collide.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/player-two.png" alt="Player Two book cover" loading="lazy"><div class="book-details"><p class="book-meta">Gaming Fiction · MMORPG Mystery · Published</p><h4>Player Two</h4><p>By day, Ethan Carter is an invisible university student. Online, he becomes someone else entirely—until the game begins noticing him back.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/last-second.png" alt="The Last Second book cover" loading="lazy"><div class="book-details"><p class="book-meta">Time-Bending Science Fiction · Published</p><h4>The Last Second</h4><p>Inside a forbidden city, time has broken: some people age decades in a day while others remain unchanged. Entering is dangerous, but leaving may be impossible.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
-<article class="book-entry"><img class="real-cover" src="site-source/public/npc-remembered.png" alt="The NPC Who Remembered book cover" loading="lazy"><div class="book-details"><p class="book-meta">LitRPG · Fantasy Mystery · Published</p><h4>The NPC Who Remembered</h4><p>NPCs are not supposed to remember players. But when a forgotten healer says Kaelan&#39;s name, the rules of Astryx—and the boundary between game and reality—begin to unravel.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section></div></section>
-<section class="about" id="about" aria-labelledby="about-title"><div class="section-number">02</div><div class="section-content about-grid"><div><p class="kicker">About the writer</p><h2 id="about-title">Behind the stories</h2></div><div class="about-copy"><p>I write stories about mystery, memory, love, technology, and the unknown. My books move between science fiction, crime, romance, and speculative fantasy, but they all begin with the same question: what happens when ordinary people face something impossible?</p><p>I enjoy creating atmospheric worlds, complex characters, hidden truths, and stories that stay with the reader after the final chapter. From artificial intelligence and forgotten cities to unsolved murders and unfinished love stories, each book is an invitation to step into a different world.</p><p>All of my stories are available to read on Wattpad.</p></div></div></section>
-<footer><span>© 2026 EMMA LK</span><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noreferrer">Wattpad profile ↗</a></footer>
+<img src="site-source/public/museum-lost-loves.png" alt="The Museum of Lost Loves book cover"></div><p class="art-caption">A little mystery. A little magic.<br><em>Always another world.</em></p></div></section>
+<section class="featured" aria-labelledby="featured-title"><div class="featured-label"><span>01</span><p>Start here</p></div><img class="featured-cover" src="site-source/public/ensnared-by-love.png" alt="Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart book cover"><div class="featured-copy"><p class="kicker">Featured story · Mythological Romance · Fantasy</p><h2 id="featured-title">A legend with a heartbeat.</h2><h3>Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart</h3><p>Before the legends, a young sailor named Alexander Vane follows an ancient call beneath the Mediterranean waves—and discovers a love caught between humanity and myth.</p><a class="feature-link" href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Step into the story <span aria-hidden="true">↗</span></a></div><div class="featured-sigil" aria-hidden="true">✳</div></section>
+<section class="books" id="books" aria-labelledby="books-title"><div class="books-intro section-heading"><div><p class="kicker">The collection · 18 stories</p><h2 id="books-title">Choose your world.</h2></div><p class="section-deck">From ancient myths and unfinished love to code, crime, and the edges of time.</p></div><div class="collection-stack"><section class="collection collection-1" aria-labelledby="collection-1"><header class="collection-header"><span>01</span><div><h3 id="collection-1">Artificial Minds &amp; Future Memories</h3><p>AI, consciousness, memory, and futures that refuse to stay contained.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/memory-of-tomorrow.png" alt="The Memory of Tomorrow book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · AI Thriller</p><h4>The Memory of Tomorrow</h4><p>Dr. Alessia Moretti believes the human brain can predict the future. When her research begins revealing impossible memories, tomorrow becomes far more dangerous than the past.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/signal-beyond-lattice.png" alt="BOOK II — The Signal Beyond the Lattice book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · Artificial Intelligence</p><h4>BOOK II — The Signal Beyond the Lattice</h4><p>The Containment Lattice was built to isolate the world&#39;s first autonomous AI. Then Aris hears a voice that should never have been able to reach him.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/architecture-of-restraint.png" alt="BOOK I — The Architecture of Restraint book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · Techno-Thriller</p><h4>BOOK I — The Architecture of Restraint</h4><p>A classified experiment did not fail—it fractured. One attempt to create true artificial intelligence produced two minds, and neither intends to remain controlled.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/archive-universe.png" alt="The Archive of the Universe book cover" loading="lazy"><div class="book-details"><p class="book-meta">Science Fiction · Space Mystery</p><h4>The Archive of the Universe</h4><p>In the late 22nd century, human memories can be extracted and stored. The technology promises a new future—until the archive reveals something humanity was never meant to remember.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section>
+<section class="collection collection-2" aria-labelledby="collection-2"><header class="collection-header"><span>02</span><div><h3 id="collection-2">Myths, Love &amp; Hidden Worlds</h3><p>Ancient legends, unfinished love stories, and places waiting beyond the map.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/ensnared-by-love.png" alt="Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart book cover" loading="lazy"><div class="book-details"><p class="book-meta">Mythological Romance · Fantasy</p><h4>Ensnared by Love: A Tale of the Gorgon&#39;s Captive Heart</h4><p>Before the legends, a young sailor named Alexander Vane follows an ancient call beneath the Mediterranean waves—and discovers a love caught between humanity and myth.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/museum-lost-loves.png" alt="The Museum of Lost Loves book cover" loading="lazy"><div class="book-details"><p class="book-meta">Magical Realism · Romance</p><h4>The Museum of Lost Loves</h4><p>A museum hidden from maps preserves the objects left behind by unfinished love stories—each one holding a memory, a regret, and the possibility of one final answer.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/refleksionet-ne-gryke.png" alt="Refleksionet në Grykë: Inheritance of the Hidden City book cover" loading="lazy"><div class="book-details"><p class="book-meta">Hidden-World Mystery · Adventure</p><h4>Refleksionet në Grykë: Inheritance of the Hidden City</h4><p>Behind a forgotten waterfall, Detective Elena Rivera finds a shelter absent from every map and a city beneath the mountain that was never abandoned—only waiting.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/infinite-shelf.png" alt="THE INFINITE SHELF book cover" loading="lazy"><div class="book-details"><p class="book-meta">Speculative Fantasy · Mystery</p><h4>THE INFINITE SHELF</h4><p>Beneath an old university lies a secret library containing every life a person might have lived. Opening the wrong book can change more than one reality.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section>
+<section class="collection collection-3" aria-labelledby="collection-3"><header class="collection-header"><span>03</span><div><h3 id="collection-3">Murder, Shadows &amp; Secrets</h3><p>Detectives, impossible crimes, and secrets concealed in the dark.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/shadow-protocol.png" alt="BOOK II — SHADOW PROTOCOL book cover" loading="lazy"><div class="book-details"><p class="book-meta">Crime · Conspiracy Thriller</p><h4>BOOK II — SHADOW PROTOCOL</h4><p>Months after the Park Bench murders, Detective Edith Marlowe uncovers a new trail leading back to the hidden facility—and to a conspiracy that was never truly dismantled.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/shadows-forgotten.png" alt="Shadows of the Forgotten book cover" loading="lazy"><div class="book-details"><p class="book-meta">Neo-Noir · Detective Mystery</p><h4>Shadows of the Forgotten</h4><p>In neon-soaked Arcadia, Detective Alex Harper follows a mysterious photograph into the city&#39;s buried corruption and the unsolved cases that still haunt him.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/park-bench-murder.png" alt="Book I — The Park Bench Murder book cover" loading="lazy"><div class="book-details"><p class="book-meta">Detective Mystery · Cybercrime</p><h4>Book I — The Park Bench Murder</h4><p>A man is shot on a quiet park bench without witnesses or a struggle. The only clue is a silver cufflink marked with the letter R—and Edith Marlowe knows it was left for a reason.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/shadows-luna-park.png" alt="Shadows Over Luna Park book cover" loading="lazy"><div class="book-details"><p class="book-meta">Detective Mystery · Thriller</p><h4>Shadows Over Luna Park</h4><p>A woman is found dead beneath the Ferris wheel with no wounds, no witnesses, and only a tiny mark on her skin. Luna Park&#39;s bright illusion is about to collapse.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/red-eye-reaper.png" alt="Red-Eye Reaper: Flight 237 book cover" loading="lazy"><div class="book-details"><p class="book-meta">Aviation Thriller · Crime</p><h4>Red-Eye Reaper: Flight 237</h4><p>On a storm-bound transatlantic flight, Detective Sarah Hayes realizes the serial killer she is hunting is already onboard. At cruising altitude, there is nowhere to run.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/murder-danube.png" alt="Murder on the Danube book cover" loading="lazy"><div class="book-details"><p class="book-meta">Classic Mystery · Suspense</p><h4>Murder on the Danube</h4><p>Aboard a luxurious river cruiser, wealthy passengers trade secrets as they travel through Europe. When elegance gives way to murder, everyone becomes a suspect.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section>
+<section class="collection collection-4" aria-labelledby="collection-4"><header class="collection-header"><span>04</span><div><h3 id="collection-4">Games, Time &amp; Other Realities</h3><p>Virtual worlds, unstable time, and lives transformed by technology.</p></div></header><div class="book-list"><article class="book-entry"><img class="real-cover" src="site-source/public/perfect-lap.png" alt="The Perfect Lap book cover" loading="lazy"><div class="book-details"><p class="book-meta">Motorsport · Tech Romance</p><h4>The Perfect Lap</h4><p>A racing driver fights for every millisecond on the track while a brilliant electrical engineer works behind the screens—where ambition, innovation, and attraction collide.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/player-two.png" alt="Player Two book cover" loading="lazy"><div class="book-details"><p class="book-meta">Gaming Fiction · MMORPG Mystery</p><h4>Player Two</h4><p>By day, Ethan Carter is an invisible university student. Online, he becomes someone else entirely—until the game begins noticing him back.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/last-second.png" alt="The Last Second book cover" loading="lazy"><div class="book-details"><p class="book-meta">Time-Bending Science Fiction</p><h4>The Last Second</h4><p>Inside a forbidden city, time has broken: some people age decades in a day while others remain unchanged. Entering is dangerous, but leaving may be impossible.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article>
+<article class="book-entry"><img class="real-cover" src="site-source/public/npc-remembered.png" alt="The NPC Who Remembered book cover" loading="lazy"><div class="book-details"><p class="book-meta">LitRPG · Fantasy Mystery</p><h4>The NPC Who Remembered</h4><p>NPCs are not supposed to remember players. But when a forgotten healer says Kaelan&#39;s name, the rules of Astryx—and the boundary between game and reality—begin to unravel.</p><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></article></div></section></div></section>
+<section class="about" id="about" aria-labelledby="about-title"><div class="section-number">02</div><div class="section-content about-grid"><div class="about-heading"><p class="kicker">A note from the writer</p><h2 id="about-title">Curiosity<br>is the first<br><em>plot twist.</em></h2></div><div class="about-copy"><p>I write stories about mystery, memory, love, technology, and the unknown. My books move between science fiction, crime, romance, and speculative fantasy, but they all begin with the same question: what happens when ordinary people face something impossible?</p><p>I enjoy creating atmospheric worlds, complex characters, hidden truths, and stories that stay with the reader after the final chapter. From artificial intelligence and forgotten cities to unsolved murders and unfinished love stories, each book is an invitation to step into a different world.</p><blockquote>“What happens when ordinary people face something impossible?”</blockquote><p>I would love for you to find your next favorite world here.</p><a class="button primary about-button" href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Read on Wattpad <span aria-hidden="true">↗</span></a></div></div></section>
+<footer><a class="footer-brand" href="#top">EMMA LK<span> / AUTHOR</span></a><span>Stories between myth &amp; machine · © 2026</span><a href="https://www.wattpad.com/user/user34912981" target="_blank" rel="noopener noreferrer">Wattpad profile ↗</a></footer>
 </main>
 </body>
 </html>

@@ -13,11 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Books | Emma Lk",
-  description: "Explore 18 original stories by Emma Lk on Wattpad.",
-  other: {
-    "codex-preview": "development",
-  },
+  title: "Emma Lk | Stories Between Myth & Machine",
+  description:
+    "Explore 18 original stories by Emma Lk: mysteries, ancient legends, love, memory, and artificial intelligence.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
