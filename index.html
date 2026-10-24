@@ -80,5 +80,21 @@ $('search').oninput=render;$('statusFilter').onchange=render;
 $('export').onclick=()=>{const blob=new Blob([JSON.stringify(books,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ta-vivlia-mou.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
 $('import').onclick=()=>$('fileInput').click();
 $('fileInput').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>2e6)throw Error('Το αρχείο είναι πολύ μεγάλο.');const raw=JSON.parse(await file.text());if(!Array.isArray(raw)||raw.length>5000||raw.some(x=>!x||typeof x.title!=='string'))throw Error('Μη έγκυρη μορφή βιβλιοθήκης.');if(!confirm('Η εισαγωγή θα αντικαταστήσει τα βιβλία αυτού του browser. Συνέχεια;'))return;books=raw.filter(x=>x.title.trim()).map(normalize);save();render()}catch(err){alert('Αποτυχία εισαγωγής: '+err.message)}finally{e.target.value=''}};
+async function loadPublishedBooks(){
+  try{
+    const response=await fetch('./books.json',{cache:'no-store'});
+    if(!response.ok) return;
+    const published=await response.json();
+    if(!Array.isArray(published)) return;
+    const safe=published.filter(b=>b&&typeof b==='object'&&typeof b.title==='string'&&b.title.trim()).map(normalize);
+    const keys=new Set(books.map(b=>b.title.trim().toLocaleLowerCase('el')+'|'+b.author.trim().toLocaleLowerCase('el')));
+    for(const book of safe){
+      const key=book.title.trim().toLocaleLowerCase('el')+'|'+book.author.trim().toLocaleLowerCase('el');
+      if(!keys.has(key)){books.push(book);keys.add(key)}
+    }
+    render();
+  }catch(error){console.warn('Δεν ήταν δυνατή η φόρτωση του καταλόγου.',error)}
+}
 render();
+loadPublishedBooks();
 </script></body></html>
