@@ -1,1 +1,200 @@
-[]
+[
+  {
+    "title": "The Memory of Tomorrow",
+    "collection": "The Machine Within",
+    "genre": "Science Fiction · AI Thriller",
+    "series": "",
+    "description": "Dr. Alessia Moretti believes the human brain can predict the future. When her research begins revealing impossible memories, tomorrow becomes far more dangerous than the past.",
+    "cover": "site-source/public/memory-of-tomorrow.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "BOOK I — The Architecture of Restraint",
+    "collection": "The Machine Within",
+    "genre": "Science Fiction · Techno-Thriller",
+    "series": "The AI Duology · Book 1 of 2 · Start here",
+    "description": "A classified experiment did not fail—it fractured. One attempt to create true artificial intelligence produced two minds, and neither intends to remain controlled.",
+    "cover": "site-source/public/architecture-of-restraint.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "BOOK II — The Signal Beyond the Lattice",
+    "collection": "The Machine Within",
+    "genre": "Science Fiction · Artificial Intelligence",
+    "series": "The AI Duology · Book 2 of 2 · Read after Book I",
+    "description": "The Containment Lattice was built to isolate the world's first autonomous AI. Then Aris hears a voice that should never have been able to reach him.",
+    "cover": "site-source/public/signal-beyond-lattice.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "The Archive of the Universe",
+    "collection": "The Machine Within",
+    "genre": "Science Fiction · Space Mystery",
+    "series": "",
+    "description": "In the late 22nd century, human memories can be extracted and stored. The technology promises a new future—until the archive reveals something humanity was never meant to remember.",
+    "cover": "site-source/public/archive-universe.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "Ensnared by Love: A Tale of the Gorgon's Captive Heart",
+    "collection": "Myth, Love & the Unseen",
+    "genre": "Mythological Romance · Fantasy",
+    "series": "",
+    "description": "Before the legends, a young sailor named Alexander Vane follows an ancient call beneath the Mediterranean waves—and discovers a love caught between humanity and myth.",
+    "cover": "site-source/public/ensnared-by-love.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "The Museum of Lost Loves",
+    "collection": "Myth, Love & the Unseen",
+    "genre": "Magical Realism · Romance",
+    "series": "",
+    "description": "A museum hidden from maps preserves the objects left behind by unfinished love stories—each one holding a memory, a regret, and the possibility of one final answer.",
+    "cover": "site-source/public/museum-lost-loves.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "Refleksionet në Grykë: Inheritance of the Hidden City",
+    "collection": "Myth, Love & the Unseen",
+    "genre": "Hidden-World Mystery · Adventure",
+    "series": "",
+    "description": "Behind a forgotten waterfall, Detective Elena Rivera finds a shelter absent from every map and a city beneath the mountain that was never abandoned—only waiting.",
+    "cover": "site-source/public/refleksionet-ne-gryke.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "THE INFINITE SHELF",
+    "collection": "Myth, Love & the Unseen",
+    "genre": "Speculative Fantasy · Mystery",
+    "series": "",
+    "description": "Beneath an old university lies a secret library containing every life a person might have lived. Opening the wrong book can change more than one reality.",
+    "cover": "site-source/public/infinite-shelf.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "Book I — The Park Bench Murder",
+    "collection": "Cases in the Dark",
+    "genre": "Detective Mystery · Cybercrime",
+    "series": "The Edith Marlowe Series · Book 1 of 2 · Start here",
+    "description": "A man is shot on a quiet park bench without witnesses or a struggle. The only clue is a silver cufflink marked with the letter R—and Edith Marlowe knows it was left for a reason.",
+    "cover": "site-source/public/park-bench-murder.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "BOOK II — SHADOW PROTOCOL",
+    "collection": "Cases in the Dark",
+    "genre": "Crime · Conspiracy Thriller",
+    "series": "The Edith Marlowe Series · Book 2 of 2 · Read after Book I",
+    "description": "Months after the Park Bench murders, Detective Edith Marlowe uncovers a new trail leading back to the hidden facility—and to a conspiracy that was never truly dismantled.",
+    "cover": "site-source/public/shadow-protocol.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "Shadows of the Forgotten",
+    "collection": "Cases in the Dark",
+    "genre": "Neo-Noir · Detective Mystery",
+    "series": "",
+    "description": "In neon-soaked Arcadia, Detective Alex Harper follows a mysterious photograph into the city's buried corruption and the unsolved cases that still haunt him.",
+    "cover": "site-source/public/shadows-forgotten.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "Shadows Over Luna Park",
+    "collection": "Cases in the Dark",
+    "genre": "Detective Mystery · Thriller",
+    "series": "",
+    "description": "A woman is found dead beneath the Ferris wheel with no wounds, no witnesses, and only a tiny mark on her skin. Luna Park's bright illusion is about to collapse.",
+    "cover": "site-source/public/shadows-luna-park.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "Red-Eye Reaper: Flight 237",
+    "collection": "Cases in the Dark",
+    "genre": "Aviation Thriller · Crime",
+    "series": "",
+    "description": "On a storm-bound transatlantic flight, Detective Sarah Hayes realizes the serial killer she is hunting is already onboard. At cruising altitude, there is nowhere to run.",
+    "cover": "site-source/public/red-eye-reaper.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "Murder on the Danube",
+    "collection": "Cases in the Dark",
+    "genre": "Classic Mystery · Suspense",
+    "series": "",
+    "description": "Aboard a luxurious river cruiser, wealthy passengers trade secrets as they travel through Europe. When elegance gives way to murder, everyone becomes a suspect.",
+    "cover": "site-source/public/murder-danube.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "The Perfect Lap",
+    "collection": "Worlds Beyond the Rules",
+    "genre": "Motorsport · Tech Romance",
+    "series": "",
+    "description": "A racing driver fights for every millisecond on the track while a brilliant electrical engineer works behind the screens—where ambition, innovation, and attraction collide.",
+    "cover": "site-source/public/perfect-lap.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "Player Two",
+    "collection": "Worlds Beyond the Rules",
+    "genre": "Gaming Fiction · MMORPG Mystery",
+    "series": "",
+    "description": "By day, Ethan Carter is an invisible university student. Online, he becomes someone else entirely—until the game begins noticing him back.",
+    "cover": "site-source/public/player-two.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "The Last Second",
+    "collection": "Worlds Beyond the Rules",
+    "genre": "Time-Bending Science Fiction",
+    "series": "",
+    "description": "Inside a forbidden city, time has broken: some people age decades in a day while others remain unchanged. Entering is dangerous, but leaving may be impossible.",
+    "cover": "site-source/public/last-second.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  },
+  {
+    "title": "The NPC Who Remembered",
+    "collection": "Worlds Beyond the Rules",
+    "genre": "LitRPG · Fantasy Mystery",
+    "series": "",
+    "description": "NPCs are not supposed to remember players. But when a forgotten healer says Kaelan's name, the rules of Astryx—and the boundary between game and reality—begin to unravel.",
+    "cover": "site-source/public/npc-remembered.png",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
+  }
+]
