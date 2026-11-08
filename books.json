@@ -196,5 +196,16 @@
     "wattpadProfile": "https://www.wattpad.com/user/user34912981",
     "wattpadStoryUrl": null,
     "verifiedOnWattpad": false
+  },
+  {
+    "title": "Beyond the Apex",
+    "collection": "Worlds Beyond the Rules",
+    "genre": "Motorsport · Romance · Technology",
+    "series": "",
+    "description": "In the high-speed world of motorsport, every millisecond matters. A young racing driver is fighting to prove himself on the track. Behind the screens in the garage, an electrical engineer preparing for a PhD in robotics is trying to solve a different problem: how to turn data, algorithms, and intelligent systems into the perfect lap. When their worlds collide, instinct and technology must work together. Because sometimes the difference between victory and defeat is not only the driver behind the wheel... but the mind behind the code.",
+    "cover": "site-source/public/beyond-the-apex.svg",
+    "wattpadProfile": "https://www.wattpad.com/user/user34912981",
+    "wattpadStoryUrl": null,
+    "verifiedOnWattpad": false
   }
 ]
