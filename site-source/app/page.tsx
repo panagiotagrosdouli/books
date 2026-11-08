@@ -128,7 +128,8 @@ export default function Home() {
                     <img className="real-cover" src={book.cover} alt={`${book.title} book cover`} />
                     <div className="book-details">
                       <p className="book-meta">{book.genre}</p>
-                      <h4>{book.title}</h4>
+                      <h4>{book.title}{book.subtitle ? ` — ${book.subtitle}` : ""}</h4>
+                      {book.series && <p className="book-series">{[book.seriesOrder, book.series].filter(Boolean).join(" · ")}</p>}
                       <p className="book-status">{book.publicationStatus ?? "Wattpad publication status unverified"}</p>
                       <p>{book.description}</p>
                       <a href={wattpadProfile} rel="noopener noreferrer">Visit Wattpad profile <span aria-hidden="true">↗</span></a>
