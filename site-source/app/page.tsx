@@ -55,12 +55,11 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="kicker">For the curious <span>·</span> Emma Lk</p>
-          <h1>One good<br />story can<br /><em>change you.</em></h1>
+          <p className="kicker">Author <span>·</span> Emma Lk</p>
+          <h1>EMMA<br /><em>LK</em></h1>
           <div className="gold-line" aria-hidden="true"><span /></div>
           <p className="intro-copy">
-            No reading list. No pressure. Just a mystery, a myth, or a future
-            you might want to follow for one more page.
+            Stories to Stay In. Mystery, imagined worlds, and stories that linger.
           </p>
           <div className="actions">
             <a className="button primary" href="#start-here">Find your first story <span>↓</span></a>
@@ -68,7 +67,7 @@ export default function Home() {
           </div>
           <div className="hero-facts" aria-label="Explore the stories">
             <div><strong>18</strong><span>catalogue entries</span></div>
-            <div><strong>04</strong><span>kinds of worlds</span></div>
+            <div><strong>04</strong><span>site collections</span></div>
             <div><strong>01</strong><span>page at a time</span></div>
           </div>
         </div>
