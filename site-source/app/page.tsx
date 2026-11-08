@@ -49,7 +49,7 @@ export default function Home() {
           <a href="#start-here">Start here</a>
           <a href="#books">All stories</a>
           <a href="#about">The writer</a>
-          <a className="nav-cta" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Visit Wattpad profile <span aria-hidden="true">↗</span></a>
+          <a className="nav-cta" href={wattpadProfile} rel="noopener noreferrer">Visit Wattpad profile <span aria-hidden="true">↗</span></a>
         </nav>
       </header>
 
@@ -63,7 +63,7 @@ export default function Home() {
           </p>
           <div className="actions">
             <a className="button primary" href="#start-here">Find your first story <span>↓</span></a>
-            <a className="text-link" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Meet me on Wattpad <span aria-hidden="true">↗</span></a>
+            <a className="text-link" href={wattpadProfile} rel="noopener noreferrer">Meet me on Wattpad <span aria-hidden="true">↗</span></a>
           </div>
           <div className="hero-facts" aria-label="Explore the stories">
             <div><strong>18</strong><span>catalogue entries</span></div>
@@ -97,7 +97,7 @@ export default function Home() {
                 <p className="gateway-label">{step.label}</p>
                 <h3>{step.hook}</h3>
                 <p className="gateway-title">Start with <strong>{step.title}</strong></p>
-                <a href={wattpadProfile} target="_blank" rel="noopener noreferrer">Find it on Wattpad <span aria-hidden="true">↗</span></a>
+                <a href={wattpadProfile} rel="noopener noreferrer">Find it on Wattpad <span aria-hidden="true">↗</span></a>
               </div>
             </article>
           ))}
@@ -128,7 +128,7 @@ export default function Home() {
                       <p className="book-meta">{book.genre}</p>
                       <h4>{book.title}</h4>
                       <p>{book.description}</p>
-                      <a href={wattpadProfile} target="_blank" rel="noopener noreferrer">Visit Wattpad profile <span aria-hidden="true">↗</span></a>
+                      <a href={wattpadProfile} rel="noopener noreferrer">Visit Wattpad profile <span aria-hidden="true">↗</span></a>
                     </div>
                   </article>
                 ))}
@@ -149,7 +149,7 @@ export default function Home() {
             <p>
               Wattpad publication, descriptions, genres, series, and individual story links have not been independently confirmed for these entries. Visit my profile for the latest published catalogue.
             </p>
-            <a className="button primary about-button" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Visit my Wattpad profile <span aria-hidden="true">↗</span></a>
+            <a className="button primary about-button" href={wattpadProfile} rel="noopener noreferrer">Visit my Wattpad profile <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
@@ -157,14 +157,14 @@ export default function Home() {
       <section className="closing" aria-labelledby="closing-title">
         <p className="kicker">Just one more page</p>
         <h2 id="closing-title">See where<br /><em>the story goes.</em></h2>
-        <a className="button light" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Choose a story on Wattpad <span aria-hidden="true">↗</span></a>
+        <a className="button light" href={wattpadProfile} rel="noopener noreferrer">Choose a story on Wattpad <span aria-hidden="true">↗</span></a>
         <span className="closing-mark" aria-hidden="true">✳</span>
       </section>
 
       <footer>
         <a className="footer-brand" href="#top"><span className="brand-mark">✳</span> EMMA LK</a>
         <span>Fiction for the curious · © 2026 Emma Lk</span>
-        <a href={wattpadProfile} target="_blank" rel="noopener noreferrer">Wattpad ↗</a>
+        <a href={wattpadProfile} rel="noopener noreferrer">Wattpad ↗</a>
       </footer>
     </main>
   );
