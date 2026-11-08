@@ -68,13 +68,13 @@ export default function Home() {
             <a className="text-link" href={wattpadProfile} rel="noopener noreferrer">Meet me on Wattpad <span aria-hidden="true">↗</span></a>
           </div>
           <div className="hero-facts" aria-label="Explore the stories">
-            <div><strong>32</strong><span>catalogue entries</span></div>
+            <div><strong>39</strong><span>catalogue entries</span></div>
             <div><strong>06</strong><span>site collections</span></div>
             <div><strong>01</strong><span>page at a time</span></div>
           </div>
         </div>
         <div className="hero-art" aria-label="Selected book covers by Emma Lk">
-          <span className="art-index"><span>FIELD NOTES</span><b>FICTION / 01—32</b></span>
+          <span className="art-index"><span>FIELD NOTES</span><b>FICTION / 01—39</b></span>
           <div className="cover-showcase">
             <img src="/memory-of-tomorrow.png" alt="The Memory of Tomorrow book cover" />
             <img src="/ensnared-by-love.png" alt="Ensnared by Love book cover" />
@@ -109,7 +109,7 @@ export default function Home() {
 
       <section className="books" id="books" aria-labelledby="books-title">
         <div className="books-intro section-heading">
-          <div><p className="kicker">The complete collection <span>·</span> 32 titles</p><h2 id="books-title">Stay for<br /><em>another world.</em></h2></div>
+          <div><p className="kicker">The complete collection <span>·</span> 39 titles</p><h2 id="books-title">Stay for<br /><em>another world.</em></h2></div>
           <p className="section-deck">Mystery, myth, artificial minds, and places that do not appear on any map. Find the premise that stays with you.</p>
         </div>
         <div className="collection-stack">
