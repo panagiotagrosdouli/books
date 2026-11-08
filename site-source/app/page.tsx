@@ -129,6 +129,7 @@ export default function Home() {
                     <div className="book-details">
                       <p className="book-meta">{book.genre}</p>
                       <h4>{book.title}</h4>
+                      <p className="book-status">{book.publicationStatus ?? "Wattpad publication status unverified"}</p>
                       <p>{book.description}</p>
                       <a href={wattpadProfile} rel="noopener noreferrer">Visit Wattpad profile <span aria-hidden="true">↗</span></a>
                     </div>
