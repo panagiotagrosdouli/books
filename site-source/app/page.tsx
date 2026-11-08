@@ -148,7 +148,7 @@ export default function Home() {
               This portfolio presents the titles, covers, and descriptions currently maintained in the site catalogue.
             </p>
             <p>
-              Wattpad publication status and individual story links have not been independently confirmed for these entries. Visit my profile for the latest published catalogue.
+              Wattpad publication, descriptions, genres, series, and individual story links have not been independently confirmed for these entries. Visit my profile for the latest published catalogue.
             </p>
             <a className="button primary about-button" href={wattpadProfile} target="_blank" rel="noopener noreferrer">Visit my Wattpad profile <span aria-hidden="true">↗</span></a>
           </div>
