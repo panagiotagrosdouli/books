@@ -10,6 +10,7 @@ const collectionDetails = [
   { title: "Myth, Love & the Unseen", description: "Stories grouped in the current site catalogue under myth, romance, and hidden worlds." },
   { title: "Cases in the Dark", description: "Stories grouped in the current site catalogue under mystery and crime." },
   { title: "Worlds Beyond the Rules", description: "Stories grouped in the current site catalogue under gaming and speculative worlds." },
+  { title: "Origins & Companion Stories", description: "Origin stories and companion works supplied for this catalogue." },
 ];
 const collections = collectionDetails.map((collection) => ({
   ...collection,
@@ -66,13 +67,13 @@ export default function Home() {
             <a className="text-link" href={wattpadProfile} rel="noopener noreferrer">Meet me on Wattpad <span aria-hidden="true">↗</span></a>
           </div>
           <div className="hero-facts" aria-label="Explore the stories">
-            <div><strong>18</strong><span>catalogue entries</span></div>
-            <div><strong>04</strong><span>site collections</span></div>
+            <div><strong>21</strong><span>catalogue entries</span></div>
+            <div><strong>05</strong><span>site collections</span></div>
             <div><strong>01</strong><span>page at a time</span></div>
           </div>
         </div>
         <div className="hero-art" aria-label="Selected book covers by Emma Lk">
-          <span className="art-index"><span>FIELD NOTES</span><b>FICTION / 01—18</b></span>
+          <span className="art-index"><span>FIELD NOTES</span><b>FICTION / 01—21</b></span>
           <div className="cover-showcase">
             <img src="/memory-of-tomorrow.png" alt="The Memory of Tomorrow book cover" />
             <img src="/ensnared-by-love.png" alt="Ensnared by Love book cover" />
@@ -107,7 +108,7 @@ export default function Home() {
 
       <section className="books" id="books" aria-labelledby="books-title">
         <div className="books-intro section-heading">
-          <div><p className="kicker">The complete collection <span>·</span> 18 stories</p><h2 id="books-title">Stay for<br /><em>another world.</em></h2></div>
+          <div><p className="kicker">The complete collection <span>·</span> 21 titles</p><h2 id="books-title">Stay for<br /><em>another world.</em></h2></div>
           <p className="section-deck">Mystery, myth, artificial minds, and places that do not appear on any map. Find the premise that stays with you.</p>
         </div>
         <div className="collection-stack">
@@ -147,7 +148,7 @@ export default function Home() {
               This portfolio presents the titles, covers, and descriptions currently maintained in the site catalogue.
             </p>
             <p>
-              Wattpad publication, descriptions, genres, series, and individual story links have not been independently confirmed for these entries. Visit my profile for the latest published catalogue.
+              Author-supplied screenshots show Published labels for Beyond the Apex and The Last Witness. Direct story links have not been supplied; other older catalogue entries remain unverified. Visit my profile for the latest published catalogue.
             </p>
             <a className="button primary about-button" href={wattpadProfile} rel="noopener noreferrer">Visit my Wattpad profile <span aria-hidden="true">↗</span></a>
           </div>
